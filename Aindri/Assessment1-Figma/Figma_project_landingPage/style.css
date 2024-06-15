@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -----------------Landing Page----------------- */
+
+body {
+    /* width: 1400px;
+    height: 850px; */
+    background: linear-gradient(rgba(216, 0, 251, 0.2), rgba(47, 24, 147, 1)), url('images/Image.png');
+    background-repeat: no-repeat;
+    background-size: 2000px 850px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* width: 469px;
+    height: 26px;
+    top: 85px;
+    left: 466px; */
+}
+
+.navbar {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav ul {
+    width: 469px;
+    height: 26px;
+    top: 85px;
+    left: 466px;
+} */
+
+nav {
+    width: 469px;
+    height: 26px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 30px;
+}
+
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+    font-weight: bolder;
+}
+
+.nav-logo {
+    background-image: url('images/basketball-logo.png');
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 1; /* Ensure arrows appear above articles */
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.container {
+    padding: 47px 12px 12px 12px;
+    margin: 12px 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#color {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+ 
