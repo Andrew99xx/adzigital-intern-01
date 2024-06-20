@@ -1,42 +1,58 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgb(0 5 255 / 40%), rgb(1 7 37 / 24%)), url('image/Background.png');
-    background-repeat: no-repeat;
-    background-size: 2000px 892px;
+    background-color: grey;
+    overflow: auto;
 }
 
 .Container {
+    background-color: rgba(47, 24, 147, 1);
+    background-image: url('image/Background.png');
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image within the container */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 546px;
-    width: 904px;
-    justify-content: space-between;
+    height: 100vh;
+    padding: 20px; /* Added padding for smaller screen readability */
+}
+
+.inner {
+    display: flex;
+    gap: 8vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Adjustable for smaller screen sizes */
+    max-width: 1200px; /* Constrain the width for large screens */
+    width: 100%;
 }
 
 .Nar {
-    width: 347px;
-    height: 317px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
     color: white;
+    margin-bottom: 20px;
 }
 
 .form {
     background-color: rgba(255, 255, 255, 1);
-    width: 470px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #h3-F {
     font-size: 42px;
-    line-height: 52px;
+    line-height: 50px;
     letter-spacing: -0.4px;
     margin-bottom: 35px;
 }
@@ -47,73 +63,40 @@ body {
 }
 
 .form {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    height: 550px;
+    padding: 0;
+    margin: 0;
+    height: auto; /* Removed fixed height for better responsiveness */
     border-radius: 10px;
 }
 
 .nav {
     display: flex;
-    justify-content: center;
     justify-content: space-between;
-    margin: 11px 0px 0 0px;
+    margin: 11px 0;
     height: 42px;
-    width: 564px;
+    width: 100%;
 }
 
 .outernav {
-    border-bottom: 1px rgba(21, 20, 57, 0.4);
-    border-bottom-style: solid;
+    border-bottom: 1px solid rgba(21, 20, 57, 0.4);
 }
 
-.signup {
-    width: 50%;
-    margin: 1px 0 0 0px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.signup:hover {
-    color: rgba(30, 14, 98, 1);
-    font-weight: bold;
-    border-bottom: 10px;
-}
-
-.signup::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: rgba(30, 14, 98, 1);
-    border-bottom: 6px;
-    transition: background-color 0.5s, transform 0.5s;
-    transform: scaleX(0);
-    transform-origin: left;
-    bottom: -6px;
-}
-
-.signup:hover::after {
-    width: 100%;
-    transform: scaleX(1);
-}
-
+.signup,
 .login {
-    margin: 1px 94px 0 0;
     width: 50%;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
+.signup:hover,
 .login:hover {
     color: rgba(30, 14, 98, 1);
     font-weight: bold;
     border-bottom: 10px;
 }
 
+.signup::after,
 .login::after {
     content: '';
     position: absolute;
@@ -128,6 +111,7 @@ body {
     bottom: -6px;
 }
 
+.signup:hover::after,
 .login:hover::after {
     width: 100%;
     transform: scaleX(1);
@@ -143,9 +127,6 @@ body {
     line-height: 35px;
     letter-spacing: 2px;
     color: rgba(21, 20, 57, 0.4);
-}
-
-#sl {
     position: relative;
 }
 
@@ -185,58 +166,59 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1px;
-    margin-top: 54px;
-    width: 300px;
-    height: 30px;
-}
-
-form {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    gap: 10px;
+    margin-top: 20px;
+    width: 90%; /* Changed from fixed width to percentage */
 }
 
 input {
     margin-bottom: 10px;
     padding: 12px;
     width: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    border-style: solid;
+    border-width: 2px;
     margin-top: 20px;
     border-radius: 30px;
-    border-color: rgba(21, 20, 57, 0.4);
+    border-color: rgba(235, 234, 237, 1);
     font-family: inherit;
     color: rgba(21, 20, 57, 0.4);
     font-size: inherit;
 }
 
 #btn {
-    margin-top: 20px;
+    margin: 20px;
     background-color: rgba(37, 218, 197, 1);
-    border-color: rgba(21, 20, 57, 0.4);
+    border-style: solid;
+    border-color: rgba(235, 234, 237, 1);
     color: rgba(255, 255, 255, 1);
     font-family: inherit;
     font-size: inherit;
     border-radius: 30px;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
     padding: 12px;
 }
 
 .or {
     display: flex;
     justify-content: center;
+    justify-content: space-between;
     padding: 20px 0 0 0;
     margin: 0 0 0 0;
 }
 
 #dash {
-    border: 1px;
+    border-width: 1px;
     border-style: solid;
-    border-color: rgba(20, 20, 20, 0.16);
-    width: 149px;
+    border-top-color: rgba(20, 20, 20, 0.16);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    width: 128px;
     height: 1px;
     padding: 0 0 0 0;
-    margin: 10px 0 0 0;
+    margin: 12px 0 0 0;
 }
 
 .or p {
@@ -244,70 +226,84 @@ input {
     font-style: inherit;
     font-size: inherit;
     font-family: inherit;
+    margin: 0 11px 0 11px;
 }
 
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) {
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
     .Container {
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .inner {
         flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 20px;
+        gap: 4vw;
     }
-
-    .Nar {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        margin-bottom: 20px;
+    .Nar, .form {
+        width: 80%;
     }
+}
 
-    .form {
+@media (max-width: 992px) {
+    .Container {
+        padding: 10px;
         width: 100%;
-        height: 499px;
+        height: 100%;
     }
-
     #h3-F {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 36px;
+        line-height: 44px;
     }
-
     #p-F {
         font-size: 14px;
         line-height: 22px;
     }
+}
 
-    .nav {
+@media (max-width: 768px) {
+    .inner {
+        gap: 2vw;
+    }
+    .form {
+        width: 90%;
+    }
+    #btn {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .Container {
+        padding: 10px;
         width: 100%;
-        margin-top: 20px;
+        height: 100%;
     }
-
-    .signup,
-    .login {
-        margin: 0;
+    .inner {
+        gap: 2vw;
     }
-
+    .Nar {
+        width: 100%;
+        text-align: center;
+    }
+    .form {
+        width: 100%;
+    }
+    #btn {
+        width: 80%;
+    }
     .cont form {
         width: 100%;
-        padding: 0 20px;
     }
-
-    input,
-    #btn {
-        width: calc(100% - 40px);
-        margin-left: 20px;
-        margin-right: 20px;
+    input {
+        width: 90%;
     }
-
     .or {
-        padding: 10px 0 0 0;
+        flex-direction: column;
+        align-items: center;
     }
-
     #dash {
-        width: calc(50% - 20px);
-    }
-
-    .or p {
-        padding: 0 10px;
+        width: 60px;
     }
 }
