@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+    overflow: auto;
+}
+
+.Main_CLA {
+    background-color: rgba(47, 24, 147, 1);;
+    background-image: url('image/Background\ \(1\).png');
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image within the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Added padding for smaller screen readability */
+}
+
+.Main_Content_CLA {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 1);
+    margin: 0px 0 0 0;
+    /* padding: 0 0 0 0; */
+}
+
+.h4-CLA {
+    font-size: 58PX;
+    line-height: 70px;
+    margin: 0 0 0 0;
+    padding: 0 0 30px 0;
+}
+
+.p-CLA {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0 0 0 0;
+    padding: 0 0 30px 0;
+}
+
+.btn-container-CLA {
+    margin: 28px 0 0 0;
+    /* padding: 9px 21px 0 0; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-btn-CLA {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* background-color: #0056b3; */
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+}
+
+.icon-circle {
+    cx: 24;
+    cy: 24;
+    r: 24;
+    fill: rgba(234, 50, 35, 1);
+}
+
+.icon-path {
+    d: path("M20 16L32 24L20 32V16Z");
+    fill: #fff;
+}
+
+.circle-btn-CLA svg {
+    display: block;
+    /* background-color: #fff; */
+    font-color: #0056b3;
+}
+
+.get-started-btn-CLA {
+    background-color:rgba(37, 218, 197, 1);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 7vh;
+    width: 11vw;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 3px 0 0 29px;
+    padding: 0 0 0 0;
+}
+
