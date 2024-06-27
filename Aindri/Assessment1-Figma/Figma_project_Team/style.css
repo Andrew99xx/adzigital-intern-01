@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    /* width: 1400px;
+    height: 850px; */
+    background-color: grey;
+    overflow: hidden;
+}
+
+.Team {
+    background-color: rgba(47, 24, 147, 1);
+    color: rgba(255, 255, 255, 1);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    /* display: flex;
+    flex-direction: column;
+    gap: 15vh; */
+}
+
+.Team-main {
+    position: relative;
+    top: 6vh;
+    left: 6vw;
+    bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+
+.Team-header {
+    height: 7vh;
+    width: 80vw;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.Team-header h4 {
+    font-size: 42px;
+    line-height: 52px;
+}
+
+.Team-header p {
+    font-size: 22px;
+    line-height: 32px;
+
+}
+
+.Team-names {
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    /* gap: 0vh;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.row1, .row2 {
+    display: flex;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    /* gap: 0vh; */
+    height: 38vh;
+}
+
+#row h2 {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+#row h1 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+
+#pic {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 47vh;  /* Increased height */
+    width: 80%;   /* Increased width */
+    /* margin: 0 auto;  Center the images */
+}
+
+.pic1 {
+    background-image: url('images/Mask\ \(5\).png');
+}
+
+.pic2 {
+    background-image: url('images/Mask\ \(7\).png');
+}
+
+.pic3 {
+    background-image: url('images/Mask\ \(9\).png');
+}
+
+.pic4 {
+    background-image: url('images/Mask\ \(6\).png');
+}
+
+.pic5 {
+    background-image: url('images/Mask\ \(8\).png');
+}
+
+#icon {
+    display: flex;
+    height: 100vh;
+    width: 15vw;
+    gap: 1vw;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#icon div {
+    /* height: 20vh;  Increased height */
+    width: 7%;   /* Increased width */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#twitter {
+    background-image: url('images/fa-twitter.png');
+}
+
+#facebook {
+    background-image: url('images/fa-facebook-square.png');
+}
+
+#dribble {
+    background-image: url('images/fa-dribbble.png');
+}
+
+#insta {
+    background-image: url('images/fa-instagram.png');
+}
+
+#skype {
+    background-image: url('images/fa-skype.png');
+}
+
+#medium {
+    background-image: url('images/fa-medium.png');
+}
+
+#git {
+    background-image: url('images/fa-git.png');
+}
