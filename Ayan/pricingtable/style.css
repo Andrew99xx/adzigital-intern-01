@@ -14,38 +14,28 @@ body {
     height: 850px; */
     background-color: grey;
     overflow: hidden;
+    background-image: url('images/background.png');
 }
 
-/* .Pricing-table {
-    background-color: rgba(47, 24, 147, 1);
-    background-image: url('images/background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-} */
+ 
 
 .Pricing-table {
-    position: relative; /* Ensure the pseudo-element is positioned relative to the container */
+    position: relative;  
     height: 100vh;
     width: 100vw;
-    background-image: url('bgimage.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: rgba(255, 255, 255, 1);
-}
+ }
 
 .Pricing-table::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(47, 24, 147, 1); /* Your overlay color */
-    opacity: 0.5; /* Adjust the opacity to see the image through the overlay */
-    z-index: 1; /* Ensure the overlay is above the background image */
-    /* color: rgba(255, 255, 255, 1); */
+    background-color: rgba(47, 24, 147, 1);  
+    opacity: 0.5;  
+    z-index: -1;  
 }
 
 .Pricing {
@@ -54,26 +44,52 @@ body {
     align-items: center;
     height: 100%;
     padding: 20px;
-    /* color: rgba(255, 255, 255, 1); */
+    
+}
+
+.price-head {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    gap: 2vh;
+}
+
+.price-head h4 {
+    text-align: center;
 }
 
 .card {
     background-color: transparent;
     border-radius: 10px;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     border: 2px solid rgba(255, 255, 255, 1);
-    /* border-color: rgba(255, 255, 255, 1); */
-    width: 300px;
+     width: 300px;
     margin: 20px;
-    /* color: rgba(255, 255, 255, 1); */
-}
+ }
 
 .price {
-    font-size: 48px;
+    font-size: 58px;
     font-weight: bold;
     margin-bottom: 10px;
-    /* color: #fff; */
+     line-height: 70px;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.price-tag {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 32px;
 }
 
 .features {
@@ -84,27 +100,186 @@ body {
 
 .features li {
     margin-bottom: 10px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
 }
 
-.features li:before {
+.features li.tick:before {
     content: "✓";
     color: #4CAF50;
     margin-right: 10px;
-    opacity: 1;
 }
 
-.buttono {
+button {
     background-color: transparent;
     color: #fff;
     border: none;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 28px;
     cursor: pointer;
     border: 2px solid rgba(255, 255, 255, 1);
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;  
+    width: 10vw;
 }
 
-.btnNext:hover {
-    opacity: 1;
-    background-color: rgb(8, 20, 236);
+button:hover {
+    background-color: rgba(233, 58, 125, 1);
 }
+
+.no-tick {
+    margin-left: 1.5rem;
+}
+
+
+
+/* Small screens (up to 480px) */
+@media only screen and (max-width: 480px) {
+    .Pricing {
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .price {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    .features li {
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  
+  /* Medium screens (up to 768px) */
+  @media only screen and (max-width: 768px) {
+    .price {
+      font-size: 58px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    .features li {
+      font-size: 16px;
+    }
+    button {
+        width: 20vw;
+    }
+    .Pricing-table::before {
+        background-color: rgba(47, 24, 147, 1);
+        height: 245vh;
+        z-index: -1;
+        background-size: contain;
+    }
+    .Pricing {
+        padding: 3rem;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .Pricing {
+      flex-wrap: wrap;
+    }
+    .card {
+      width: calc(50% - 20px);
+      margin: 10px;
+    }
+    .card:nth-child(3n+1) {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .Pricing {
+        padding: 3rem;
+    }
+    .Pricing-table::before {
+        background-color: rgba(47, 24, 147, 1);
+        height: 245vh;
+        z-index: -1;
+        background-size: contain;
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    .Pricing {
+      flex-wrap: wrap;
+    }
+    .card {
+      width: calc(50% - 20px);
+      margin: 10px;
+    }
+    .card:nth-child(3n+1) {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .Pricing {
+        padding: 3rem;
+    }
+    .Pricing-table::before {
+        background-color: rgba(47, 24, 147, 1);
+        height: 245vh;
+        z-index: -1;
+        background-size: contain;
+    }
+    .Pricing-table {
+        overflow: scroll;
+        /* height: 100vh; */
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .Pricing {
+        padding: 3rem;
+    }
+
+    .Pricing-table {
+        overflow: scroll;
+        /* height: 100vh; */
+    }
+
+    .Pricing-table::before {
+        background-color: rgba(47, 24, 147, 1);
+        height: 245vh;
+        z-index: -1;
+        background-size: contain;
+    }
+
+    button {
+        width: 25vw;
+    }
+  }
+
+  /* Large screens (up to 1024px) */
+  @media only screen and (max-width: 1024px) {
+    .price {
+      font-size: 68px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    .features li {
+      font-size: 18px;
+    }
+  }
+  
+  /* Extra large screens (up to 1440px) */
+  @media only screen and (max-width: 1440px) {
+    .price {
+      font-size: 78px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    .features li {
+      font-size: 20px;
+    }
+  }

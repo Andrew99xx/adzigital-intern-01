@@ -6,7 +6,7 @@
 }
 
 body {
-    border: 1px solid #06f336;
+    /* border: 1px solid #06f336; */
     background-color: #1E0E62;
     /* overflow: auto; */
     height: 100vh;
@@ -18,7 +18,7 @@ body {
     /* align-items: center; */
 }
 .head{
-    border: 1px solid rgb(18, 219, 115);
+    /* border: 1px solid rgb(18, 219, 115); */
     margin : 3rem 1rem 0 15rem;
     /* margin-left: 15rem; */
     padding: 0.1rem;
@@ -27,14 +27,14 @@ body {
 }
 
 .head h1 {
-    border: 1px solid rgb(18, 219, 115);
+    /* border: 1px solid rgb(18, 219, 115); */
     /* margin-left: 15rem; */
     font-size: 42px;
     /* line-height: 52px; */
 }
 
 .container {
-    border: 1px solid rgb(33, 151, 128);
+    /* border: 1px solid rgb(33, 151, 128); */
     margin: 0 20rem 0 13rem ;
      padding: 1.5rem;
     display: grid;
@@ -43,29 +43,29 @@ body {
 }
 
 .card {
-    border: 1px solid rgb(25, 104, 222);
+    /* border: 1px solid rgb(25, 104, 222); */
     display: flex;
 }
 
 .item1 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-left: 2px;
     height: 28vh;
     /* width: 80%;  */
-    /* border: 1px solid rgb(59, 43, 168); */
+    border: 1px solid rgb(59, 43, 168);
     border-radius: 9px;
 }
 .item2{
-    border: 1px solid rgb(92, 63, 63);
+    /* border: 1px solid rgb(92, 63, 63); */
     height: 28vh;
     /* width: 80%;   */
-    /* border: 1px solid rgb(59, 43, 168); */
+    border: 1px solid rgb(59, 43, 168);
     border-radius: 9px;
 
 }
 
 .profile{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 .profile img {
@@ -76,7 +76,7 @@ body {
 }
 
 .text {
-    border: 1px solid rgb(202, 56, 56);
+    /* border: 1px solid rgb(202, 56, 56); */
     /* margin-top: 0rem; */
     height: 13.5rem;
     display: flex;
@@ -89,7 +89,7 @@ body {
     height: 100px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
@@ -101,7 +101,7 @@ body {
 }
 
 .name {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
     display: flex;
@@ -120,7 +120,7 @@ body {
 
 @media (min-width: 1146px) and (max-width: 1400px) {
     body {
-        border: 1px solid #06f336;
+        /* border: 1px solid #06f336; */
         background-color: #1E0E62;
         /* overflow: auto; */
         height: 100vh;
@@ -132,7 +132,7 @@ body {
         /* align-items: center; */
     }
     .head{
-        border: 1px solid rgb(18, 219, 115);
+        /* border: 1px solid rgb(18, 219, 115); */
         margin : 3rem 1rem 0 15rem;
         /* margin-left: 15rem; */
         padding: 0.1rem;
@@ -141,14 +141,14 @@ body {
     }
     
     .head h1 {
-        border: 1px solid rgb(18, 219, 115);
+        /* border: 1px solid rgb(18, 219, 115); */
         /* margin-left: 15rem; */
         font-size: 42px;
         /* line-height: 52px; */
     }
     
     .container {
-        border: 1px solid rgb(33, 151, 128);
+        /* border: 1px solid rgb(33, 151, 128); */
         margin: 0 10rem 0 13rem ;
          padding: 1.5rem;
         display: grid;
@@ -157,29 +157,29 @@ body {
     }
     
     .card {
-        border: 1px solid rgb(25, 104, 222);
+        /* border: 1px solid rgb(25, 104, 222); */
         display: flex;
     }
     
     .item1 {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-left: 2px;
         height: 28vh;
         /* width: 80%;  */
-        /* border: 1px solid rgb(59, 43, 168); */
+        border: 1px solid rgb(59, 43, 168);
         border-radius: 9px;
     }
     .item2{
-        border: 1px solid rgb(92, 63, 63);
+        /* border: 1px solid rgb(92, 63, 63); */
         height: 28vh;
         /* width: 80%;   */
-        /* border: 1px solid rgb(59, 43, 168); */
+        border: 1px solid rgb(59, 43, 168);
         border-radius: 9px;
     
     }
     
     .profile{
-        border: 1px solid black;
+        /* border: 1px solid black; */
     
     }
     .profile img {
@@ -190,7 +190,7 @@ body {
     }
     
     .text {
-        border: 1px solid rgb(202, 56, 56);
+        /* border: 1px solid rgb(202, 56, 56); */
         /* margin-top: 0rem; */
         height: auto;
         display: flex;
@@ -203,7 +203,7 @@ body {
         height: 100px;
         display: flex;
         flex-direction: column;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     
     }
     
@@ -215,7 +215,7 @@ body {
     }
     
     .name {
-        border: 1px solid black;
+        /* border: 1px solid black; */
         margin-left: 0.5rem;
         margin-bottom: 0.5rem;
         display: flex;
@@ -284,7 +284,7 @@ margin: auto;
         padding: 1rem;
     }
     .head{
-margin: auto;
+    margin: auto;
     }
     .container {
         /* height: auto; */
