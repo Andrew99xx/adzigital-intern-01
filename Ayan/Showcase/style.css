@@ -27,10 +27,10 @@ body {
 
 header {
     /* border: 1px solid red; */
-    width: 58vw;
+    width: 47vw;
     height: 12vh;
     margin-top: 2rem;
-    margin-left: 21rem;
+    margin-left: 31rem;
     margin-right: 0.3rem;
     padding: 1rem;
     display: flex;
@@ -82,9 +82,9 @@ p {
 .works {
     /* border: 1px solid red; */
     /* position: relative; */
-    width: 58.1%;
+    width: 39.1%;
     height: 75vh; /* Adjust the height as needed */
-    margin: 2rem 11.3rem 0 21rem;
+    margin: 2rem 11.3rem 0 29rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
