@@ -16,3 +16,80 @@ body {
     justify-content: center;
     /* align-items: center; */
 }
+
+.container{
+    border: 1px solid red;
+
+}
+.upper{
+    border: 1px solid red;
+    display: flex;
+
+}
+
+.siteName{
+    border: 1px solid red;
+
+}
+
+.connect{
+    border: 1px solid red;
+    display: flex;
+
+}
+
+.middle{
+    border: 1px solid red;
+
+}
+.lower{
+    border: 1px solid red;
+    display: flex;
+
+}
+.links{
+    border: 1px solid red;
+
+}
+
+.copyright{
+    border: 1px solid red;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divider-FORM {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2px 0; /* Adjust padding as needed */
+}
+
+.line-FORM {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(20, 20, 20, 0.16);
+}
+
+.or-text-FORM {
+    padding: 0 10px; /* Adjust padding as needed */
+    color: rgba(21, 20, 57, 0.4);
+    font-style: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    text-align: center;
+}
