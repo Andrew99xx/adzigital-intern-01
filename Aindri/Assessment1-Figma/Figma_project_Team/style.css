@@ -166,3 +166,155 @@ body {
 #git {
     background-image: url('images/fa-git.png');
 }
+
+/* For screens larger than 960px (desktops) */
+@media screen and (min-width: 960px) {
+    .Team {
+        overflow: hidden;
+    }
+
+    .Team-main {
+        top: 10vh;
+        left: 6vw;
+        gap: 20vh;
+    }
+
+    .Team-header h4 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .Team-header p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .row1, .row2 {
+        height: 33vh;
+    }
+
+    #profile {
+        width: 12%;
+        /* align-items: center; */
+        /* display: flex; */
+        /* justify-content: left; */
+    }
+
+    #pic {
+        height: 98vh;
+        width: 80%;
+    }
+
+    #icon {
+        width: 100%;
+        gap: 1vw;
+    }
+
+    #icon div {
+        width: 10%;
+    }
+}
+
+/* For screens between 600px and 960px (tablets) */
+@media screen and (min-width: 600px) and (max-width: 960px) {
+
+    .Team {
+        width: 100%;
+    }
+
+    .Team-main {
+        top: 5vh;
+        left: 0vw;
+        gap: 15vh;
+        /* height: 70vh; */
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .Team-header {
+        padding: 0 15rem 0 0;
+        margin: 0 0 0 2rem;
+        width: 100vw;
+        height: 13vh;
+    }
+
+    .Team-header h4 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .Team-header p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .row1, .row2 {
+        height: 39vh;
+        padding: 0 3rem 0 0;
+        width: 100vw;
+        margin: 0 0 0 22px;
+    }
+
+    #profile {
+        width: 45%;
+        /* align-items: center; */
+    }
+
+    #pic {
+        height: 40vh;
+        width: 70%;
+    }
+
+    #icon {
+        width: 40%;
+        gap: 1.5vw;
+    }
+
+    #icon div {
+        width: 15%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .Team-main {
+        top: 4vh;
+        left: 4vw;
+        gap: 21vh;
+    }
+
+    .Team-header h4 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .Team-header p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .row1, .row2 {
+        /* flex-direction: column;
+        height: auto; */
+        padding-right: 2rem;
+    }
+
+    #profile {
+        width: 100%;
+        /* align-items: center; */
+    }
+
+    #pic {
+        height: 30vh;
+        width: 60%;
+    }
+
+    #icon {
+        width: 50%;
+        gap: 2vw;
+    }
+
+    #icon div {
+        width: 20%;
+    }
+}
