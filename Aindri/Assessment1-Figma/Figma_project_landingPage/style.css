@@ -15,7 +15,9 @@ body {
     /* width: 1400px;
     height: 850px; */
     background-color: grey;
-    overflow: auto;
+    /* overflow: auto; */
+    height: 100vh;
+    background-size: contain;
 }
 
 .LPage {
@@ -24,7 +26,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 nav {
@@ -189,4 +191,148 @@ p {
     cursor: pointer;
     width: 30%;
     padding: 12px;
+}
+
+/* For screens smaller than 600px (mobile devices) */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .LPage {
+        height: 137vh;
+        /* position: relative; */
+        /* top: 0; */
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* background-color: rgba(47, 24, 147, 1); */
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .navbar {
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .nav-logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    .prev-btn,
+    .next-btn {
+        width: 50px;
+        font-size: 20px;
+        position: fixed;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .paginator a {
+        width: 15px;
+        height: 15px;
+    }
+
+    #btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+/* For screens between 600px and 960px (tablets) */
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    .container {
+        margin: 20px 100px;
+    }
+
+    .prev-btn,
+    .next-btn {
+        width: 80px;
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .paginator a {
+        width: 20px;
+        height: 20px;
+    }
+
+    #btn {
+        width: 50%;
+        padding: 15px;
+        font-size: 20px;
+    }
+}
+
+/* For screens larger than 960px (desktops) */
+@media screen and (min-width: 960px) {
+    body {
+        background-color: lightcoral;
+    }
+
+    .container {
+        /* margin: 20px 200px; */
+        height: 100vh;
+    }
+
+    .prev-btn,
+    .next-btn {
+        width: 100px;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .paginator a {
+        width: 25px;
+        height: 25px;
+    }
+
+    #btn {
+        width: 40%;
+        padding: 20px;
+        font-size: 24px;
+    }
 }
