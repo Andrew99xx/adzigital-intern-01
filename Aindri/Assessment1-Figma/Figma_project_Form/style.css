@@ -231,79 +231,102 @@ input {
 
 
 /* Media Queries for Responsive Design */
-@media (max-width: 1200px) {
-    .Container {
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-    }
+@media (min-width: 1025px) and (max-width: 1200px)  {
     .inner {
-        flex-direction: column;
-        gap: 4vw;
+        gap: 6vw;
     }
-    .Nar, .form {
-        width: 80%;
-    }
-}
 
-@media (max-width: 992px) {
-    .Container {
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-    }
     #h3-F {
         font-size: 36px;
-        line-height: 44px;
+        line-height: 42px;
+        margin-bottom: 30px;
     }
+
     #p-F {
         font-size: 14px;
         line-height: 22px;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .inner {
-        gap: 2vw;
+        gap: 4vw;
     }
-    .form {
-        width: 90%;
+    .Nar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    #btn {
-        width: 80%;
+
+    #h3-F {
+        
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+
+    #p-F {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 481px) and (max-width: 768px){
     .Container {
         padding: 10px;
-        width: 100%;
-        height: 100%;
+    }
+    .Nar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #h3-F {
+        align-items: center;
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 20px;
+    }
+
+    #p-F {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 480px)  {
+    .Container {
+        padding: 5px;
+    }
+    .Nar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .inner {
         gap: 2vw;
     }
-    .Nar {
-        width: 100%;
-        text-align: center;
+
+    #h3-F {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 15px;
     }
-    .form {
-        width: 100%;
+
+    #p-F {
+        font-size: 12px;
+        line-height: 18px;
     }
-    #btn {
-        width: 80%;
-    }
-    .cont form {
-        width: 100%;
-    }
+
     input {
-        width: 90%;
+        padding: 10px;
+        font-size: 14px;
     }
-    .or {
-        flex-direction: column;
-        align-items: center;
-    }
-    #dash {
-        width: 60px;
+
+    #btn {
+        padding: 10px;
+        font-size: 14px;
     }
 }
