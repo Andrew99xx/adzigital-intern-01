@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -----------------Landing Page----------------- */
+
+body {
+    /* width: 1400px;
+    height: 850px; */
+    background-color: grey;
+    overflow: auto;
+}
+
+.LPage {
+    background-color: rgba(47, 24, 147, 1);
+    background-image: url('images/Image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* width: 469px;
+    height: 26px;
+    top: 85px;
+    left: 466px; */
+}
+
+.navbar {
+    height: 26vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav ul {
+    width: 469px;
+    height: 26px;
+    top: 85px;
+    left: 466px;
+} */
+
+nav {
+    width: 469px;
+    height: 26px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 30px;
+}
+
+li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+li a:hover {
+    color: rgba(209, 209, 217, 0.4);
+}
+
+.nav-logo {
+    background-image: url('images/basketball-logo.png');
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 33vw;
+  /* height: 30px; */
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 1; /* Ensure arrows appear above articles */
+  font-size: 25px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    color: rgba(209, 209, 217, 0.4);
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.container {
+    /* padding: 47px 12px 12px 12px; */
+    margin: 20px 42px 0px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#color {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+ 
+h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.25px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 86px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.paginator {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paginator a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;  /* Set the width */
+    height: 10px;  /* Set the height */
+    border: 1px solid white;
+    border-radius: 50%;  /* Make it circular */
+    transition: background-color 0.3s, color 0.3s;
+    /* font-size: 14px; */
+}
+
+.paginator a:hover {
+    background-color: white;
+    color: rgba(47, 24, 147, 1);
+}
+
+.paginator a.active {
+    background-color: white;
+    color: rgba(47, 24, 147, 1);
+    font-weight: bold;
+}
+
+#btn {
+    margin: 55px;
+    border-style: solid;
+    border-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 30%;
+    padding: 12px;
+}
