@@ -13,7 +13,7 @@ body {
     /* width: 1400px;
     height: 850px; */
     background-color: grey;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -23,24 +23,26 @@ body {
     background-image: url('images/Background\ \(2\).png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
     color: rgba(255, 255, 255, 1);
 }
 
 .contact-container {
     display: flex;
-    height: 100%;
-    /* width: 100vh; */
     position: relative;
-    top: 7vh;
-    /* left: 7vh; */
     justify-content: center;
     /* align-items: center;
     justify-content: space-between; */
     align-items: center;
     /* right: 7vh; */
-    gap: 3vw;
+    gap:7vw;
+    width: 70%;
+    min-width: 700px;
+    max-width: 1300px;
 }
 
 .contact-msg h1 {
@@ -111,19 +113,17 @@ body {
     gap: 1vw;
 }
 
+
 /* ---------------Contact-right----------- */
 .contact-right {
     display: flex;
     flex-direction: column;
     gap: 3vh;
+    padding: 25px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 10px;
     box-sizing: border-box;
     border-color: transparent;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    height: 68vh;
-    width: 26vw;
     /* position: relative;
     left: 1vw; */
     background-position: contain;
@@ -192,7 +192,7 @@ body {
     line-height: 26px;
     border: 2px solid rgba(235, 234, 237, 1);
     border-radius: 26px;
-    width: 47%;
+    width: 100%;
     height: 5vh;
     margin: 0 0 0 0;
     padding: 0 0 0 1rem;
@@ -201,8 +201,6 @@ body {
 #div {
     position: relative;
     /* top: 1vh; */
-    left: 5vh;
-    right: 1vh;
     bottom: 1vh;
     display: flex;
     flex-direction: column;
@@ -230,10 +228,6 @@ body {
     padding: 0 0 0 1rem;
 }
 
-.input2, .input3 {
-    width: 40vw;
-}
-
 .title3 p{
     height: 3vh;
 }
@@ -245,7 +239,7 @@ body {
     line-height: 26px;
     border: 2px solid rgba(235, 234, 237, 1);
     border-radius: 14px;
-    width: 47%;
+    width: 100%;
     height: 15vh;
     margin: 0 0 0 0;
     padding: 0 0 4rem 1rem;
@@ -262,5 +256,20 @@ body {
 #select {
     border: 2px solid rgba(235, 234, 237, 1);
     border-radius: 26px;
-    width: 24%;
+    width: 50%;
+}
+
+@media only screen and (max-width:780px) {
+    .contact-container{
+        flex-direction: column;
+        min-width: initial;
+        width: 100%;
+    }
+    .contact{
+        min-height: 100vh;
+        padding: 25px 15px;
+    }
+    .contact-info{
+        gap: .5rem;
+    }
 }
