@@ -353,7 +353,7 @@ nav ul li a{
     z-index: 1.5;
 }
 
-.D{
+/* .D{
     background-color: rgba(47, 24, 147, 1);
     background: url('pricing.jpeg') no-repeat center center fixed;
     height: 100%;
@@ -369,7 +369,7 @@ nav ul li a{
     height: 100%;
     background-color: rgba(0, 0, 255, 0.2);
     z-index: 1.5;
-}
+} */
 
 .E{
     background-color: rgba(47, 24, 147, 1);
