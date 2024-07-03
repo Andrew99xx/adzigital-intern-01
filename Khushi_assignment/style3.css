@@ -1,0 +1,139 @@
+* {
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        font-family: 'DM Sans', sans-serif;
+        box-sizing: border-box;
+}
+    
+body,
+html {
+        background-color: grey;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+}
+    
+
+.E{
+    background-color: rgba(47, 24, 147, 1);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.main{
+    position: relative;
+    top: 6vh;
+    left: 6vw;
+    bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+
+.team-head{
+    height: 7vh;
+    width: 80vw;
+    margin: 0 0 0 0;
+    padding: 5% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.team-head h4{
+    font-size: 40px;
+    line-height: 52px;
+}
+.team-head p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.team-body{
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+}
+
+.img{
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    margin-right: 90%;
+    height: 47vh;  
+    width: 80%;  
+    padding: 25% 25% 25% 25%;
+    border-radius: 50%;
+    /* margin-left: 1rem; */
+}
+
+.row1, .row2 {
+    display: flex;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    /* gap: 0vh; */
+    height: 38vh;
+}
+
+#row h2 {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0% 0% 0% 0%;
+    /* padding: 20% 20% 20% 20%; */
+}
+
+#row h1 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#first{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+
+
+
+#icon{
+    display: flex;
+    height: 100vh;
+    width: 15vw;
+    gap: 1vw;
+}
+
+#icon div{
+    width: 7%;   
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#twitter {
+    background-image: url('images/fa-twitter.png');
+}
+
+#facebook {
+    background-image: url('images/fa-facebook-square.png');
+}
+
+#dribble {
+    background-image: url('images/fa-dribbble.png');
+}
+
+#insta {
+    background-image: url('images/fa-instagram.png');
+}
+
+#skype {
+    background-image: url('images/fa-skype.png');
+}
+
+#medium {
+    background-image: url('images/fa-medium.png');
+}
+
+#git {
+    background-image: url('images/fa-git.png');
+}
+
