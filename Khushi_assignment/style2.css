@@ -9,5 +9,42 @@
 body, html{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
+}
+
+.G{
+    background-color: rgba(47, 24, 147, 1);
+    height: 100%;
+    width: 100%;
+    background-size: cover;  
+    display: flex;
+    color: rgba(255,255,255,1);
+   
+}
+
+header{
+    width: 47vw;
+    height: 12vh;
+    margin-top: 2rem;
+    margin-left: 31rem;
+    margin-right: 0.3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    padding: 2p;
+    font-size: 42px;
+    line-height: 52px;
+}
+
+button{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.show-pages{
+
 }
