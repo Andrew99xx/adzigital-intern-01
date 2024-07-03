@@ -7,6 +7,7 @@
 }
 
 body, html{
+    background-color: rgba(47, 24, 147, 1);
     margin: 0;
     padding: 0;
     overflow: auto;
@@ -17,7 +18,7 @@ body, html{
     height: 100%;
     width: 100%;
     background-size: cover;  
-    display: flex;
+    /* display: flex; */
     color: rgba(255,255,255,1);
    
 }
@@ -45,6 +46,62 @@ button{
     line-height: 26px;
 }
 
-.show-pages{
+h2{
+    font-size: 14px;
+    line-height: 26px;
+}
 
+.vaw{
+    height: 52.2px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 1px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.show-pages{
+    width: 39.1%;
+    height: 75vh; /* Adjust the height as needed */
+    margin: 2rem 13rem 10rem 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;   
+}
+
+.first{
+    margin-left: 40px;
+    /* position: absolute; */
+    width: 370px;
+    height: 286px;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    text-align: center;
+}
+
+.img-1{
+    height: 190px;
+    width: 370px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+    height: auto;
+}
+
+.description h2{
+    font-size: 10px;
+    line-height:18px;
+
+}
+.description p {
+    font-size: 13px;
+    line-height: 20px;
 }
