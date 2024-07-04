@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -----------------Landing Page----------------- */
+
+body {
+    /* width: 1400px;
+    height: 850px; */
+    background-color: grey;
+    /* overflow: auto; */
+    height: 100vh;
+    background-size: contain;
+}
+
+.LPage {
+    background-color: rgba(47, 24, 147, 1);
+    background-image: url('images/Image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* width: 469px;
+    height: 26px;
+    top: 85px;
+    left: 466px; */
+}
+
+.navbar {
+    height: 26vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav ul {
+    width: 469px;
+    height: 26px;
+    top: 85px;
+    left: 466px;
+} */
+
+nav {
+    width: 469px;
+    height: 26px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 30px;
+}
+
+li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+li a:hover {
+    color: rgba(209, 209, 217, 0.4);
+}
+
+.nav-logo {
+    background-image: url('images/basketball-logo.png');
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 33vw;
+  /* height: 30px; */
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 1; /* Ensure arrows appear above articles */
+  font-size: 25px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    color: rgba(209, 209, 217, 0.4);
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.container {
+    /* padding: 47px 12px 12px 12px; */
+    margin: 20px 42px 0px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#color {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+ 
+h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.25px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 86px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.paginator {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paginator a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;  /* Set the width */
+    height: 10px;  /* Set the height */
+    border: 1px solid white;
+    border-radius: 50%;  /* Make it circular */
+    transition: background-color 0.3s, color 0.3s;
+    /* font-size: 14px; */
+}
+
+.paginator a:hover {
+    background-color: white;
+    color: rgba(47, 24, 147, 1);
+}
+
+.paginator a.active {
+    background-color: white;
+    color: rgba(47, 24, 147, 1);
+    font-weight: bold;
+}
+
+#btn {
+    margin: 55px;
+    border-style: solid;
+    border-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 30%;
+    padding: 12px;
+}
+
+/* For screens smaller than 600px (mobile devices) */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .LPage {
+        height: 137vh;
+        /* position: relative; */
+        /* top: 0; */
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* background-color: rgba(47, 24, 147, 1); */
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .navbar {
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .nav-logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    .prev-btn,
+    .next-btn {
+        width: 50px;
+        font-size: 20px;
+        position: fixed;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .paginator a {
+        width: 15px;
+        height: 15px;
+    }
+
+    #btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+/* For screens between 600px and 960px (tablets) */
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    .container {
+        margin: 20px 100px;
+    }
+
+    .prev-btn,
+    .next-btn {
+        width: 80px;
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .paginator a {
+        width: 20px;
+        height: 20px;
+    }
+
+    #btn {
+        width: 50%;
+        padding: 15px;
+        font-size: 20px;
+    }
+}
+
+/* For screens larger than 960px (desktops) */
+@media screen and (min-width: 960px) {
+    body {
+        background-color: lightcoral;
+    }
+
+    .container {
+        /* margin: 20px 200px; */
+        height: 100vh;
+    }
+
+    .prev-btn,
+    .next-btn {
+        width: 100px;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .paginator a {
+        width: 25px;
+        height: 25px;
+    }
+
+    #btn {
+        width: 40%;
+        padding: 20px;
+        font-size: 24px;
+    }
+}
