@@ -56,6 +56,9 @@ html {
     display: flex; 
     flex-direction: column;
 }
+.p1 img{
+    padding-left: -30%;
+}
 
 .img{
     background-repeat: no-repeat;
