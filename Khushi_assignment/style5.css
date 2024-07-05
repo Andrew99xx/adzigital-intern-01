@@ -47,6 +47,11 @@ body {
     align-items: center;
     gap: 3vw;
 }
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
 
 .contact-msg h1 {
     font-size: 42px;
@@ -63,6 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4vh;
+    margin-top: -30%;
     /* width: 50%; */
 }
 
@@ -73,13 +79,9 @@ body {
     margin-top: 1px;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4vh;
-}
 
-.phn-icon {
+
+/* .phn-icon {
     background-image: url('images/fa-phone.png');
     height: 2vh;
     width: 2vw;
@@ -100,7 +102,7 @@ body {
     height: 2vh;
     width: 2vw;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .phone {
