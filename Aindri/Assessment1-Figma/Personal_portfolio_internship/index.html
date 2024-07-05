@@ -12,6 +12,7 @@
     <div id="Header">
         <div class="Container">
             <nav>
+                <i class="fa-solid fa-bars" onclick="Toggle_menu()" id="sidebar-toggle"></i>
                 <!--<img src="images/logo.png" class="logo">-->
                 <ul id="Side_menu">
                     <li><a href="#Header">Home</a></li>
@@ -21,7 +22,6 @@
                     <li><a href="#Contact">Contacts</a></li>
                     <i class="fa-solid fa-xmark" onclick="Close_menu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="Open_menu()"></i>
             </nav>
             <div class="Header_Text">
                 <p>&lt;Coder&gt; & &lt;Developer&gt;</p>
@@ -154,6 +154,8 @@
                     <a href="https://twitter.com/AindriGhoshal?t=s_0FlYeNwGMN8fsklbbWFg&s=08"><i class="fa-brands fa-twitter"></i></a>
                     <a href="https://instagram.com/aindri_irl_?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/aindrighoshal0701"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B919088574729&text=Hello+there%21&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.google.com/maps?q=22.871853,88.424751"><i class="fa-solid fa-location-dot"></i></a>
                 </div>
                 <a href="images/Resume_may23.pdf" download class="btn btn2">Download My CV</a>
             </div>
@@ -196,4 +198,16 @@
        event.currentTarget.classList.add("Active_link");
        document.getElementById(tabname).classList.add("Active_tab");
     }
+
+</script>
+
+<script>
+    function Toggle_menu() {
+    var sideMenu = document.getElementById("Side_menu");
+    if (sideMenu.classList.contains("open")) {
+        sideMenu.classList.remove("open");
+    } else {
+        sideMenu.classList.add("open");
+    }
+}
 </script>
