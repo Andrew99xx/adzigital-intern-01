@@ -9,20 +9,26 @@
     <script src="https://kit.fontawesome.com/b9f2843f24.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="Header">
+    <div class="Header" id="Header">
         <div class="Container">
-            <nav>
-                <i class="fa-solid fa-bars" onclick="Toggle_menu()" id="sidebar-toggle"></i>
-                <!--<img src="images/logo.png" class="logo">-->
-                <ul id="Side_menu">
-                    <li><a href="#Header">Home</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#About">About</a></li>
-                    <!--<li><a href="#portfolio">Portfolio</a></li>-->
-                    <li><a href="#Contact">Contacts</a></li>
-                    <i class="fa-solid fa-xmark" onclick="Close_menu()"></i>
+            <!--<img src="images/logo.png" class="logo">-->
+            <div class="side">
+                <!-- The sidebar icon -->
+                <button class="sidebar-toggle" id="sidebar-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+              
+              <!-- The sidebar menu -->
+              <nav class="sidebar" id="sidebar">
+                <ul>
+                  <li><a href="#Header">Home</a></li>
+                  <li><a href="#Services">Service</a></li>
+                  <li><a href="#About">About</a></li>
+                  <li><a href="#Contact">Education</a></li>
                 </ul>
-            </nav>
+              </nav>
+            </div>
+                <!-- <i class="fa-solid fa-bars" onclick="Open_menu()"></i> -->
             <div class="Header_Text">
                 <p>&lt;Coder&gt; & &lt;Developer&gt;</p>
                 <h1>Hi, I'm <span>Aindri</span><br>Ghoshal From India</h1>
@@ -79,7 +85,7 @@
     <!---------------------services------------------------>
     <div id="Services">
         <div class="Container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="Sub_title">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
@@ -202,12 +208,12 @@
 </script>
 
 <script>
-    function Toggle_menu() {
-    var sideMenu = document.getElementById("Side_menu");
-    if (sideMenu.classList.contains("open")) {
-        sideMenu.classList.remove("open");
-    } else {
-        sideMenu.classList.add("open");
-    }
-}
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.getElementById('sidebar');
+
+// Add an event listener to the sidebar icon
+    sidebarToggle.addEventListener('click', () => {
+  // Toggle the show class on the sidebar menu
+        sidebar.classList.toggle('show');
+    });
 </script>

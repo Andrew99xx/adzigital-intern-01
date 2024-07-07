@@ -13,20 +13,24 @@ body{
 }
 #Header{
     width: 90%;
-    height: 111vh;
+    height: 100vh;
+    display: flex;
     background-image: url(images/Portfolio1.png);
     background-size: 400PX;
     background-position: right;
     background-repeat: no-repeat;
 }
+
+
+
 .Container{
-    padding: 12px 8%;
+    padding: 12px 8% 0 0;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 /*.logo{
     width: 140px;
@@ -56,8 +60,9 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .Header_Text{
-    margin-top: 20%;
+    margin-top: 40%;
     font-size: 30px;
+    /* text-align: center; */
 }
 .Header_Text h1{
     font-size: 60px;
@@ -70,47 +75,94 @@ nav ul li a:hover::after{
     color: #0585f5;
 }
 
-#Side_menu {
-    display: block; /* show the side menu by default */
-}
-
-/* hide the side menu on smaller screens */
-@media only screen and (max-width: 768px) {
-    #Side_menu.open {
-        display: flex; /* show the side menu */
-        flex-direction: column;
-        position: absolute; /* make the side menu absolute */
-        top: 0; /* position the side menu at the top */
-        left: 0; /* position the side menu at the left */
-        width: 10%; /* make the side menu full width */
-        height: 100vh; /* make the side menu full height */
-        background-color: #6f050562; /* add a background color to the side menu */
-        padding: 20px; /* add some padding to the side menu */
-        z-index: 1; /* make the side menu on top of other elements */
-    }
-    #sidebar-toggle {
-        display: block; /* show the sidebar toggle button */
-    }
-}
+.sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  /* Style the sidebar menu */
+  .sidebar {
+    bottom: 2vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 136px; */
+    height: 100vh;
+    background-color: #33333391;
+    color: #fff;
+    padding: 40px 0 0 9px;
+    transform: translateX(-250px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    color: #ccc;
+  }
+  
+  .side {
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+  }
+  
+  /* Show the sidebar menu when the icon is clicked */
+  .sidebar.show {
+    transform: translateX(0);
+  }
 
 /* ------------------about-------------------- */
 #about{
     padding: 80px 0;
     color: #ababab;
 }
+
+#About {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#About .Container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .Row{
     display: flex;/* contents will be side by side */
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .About_col_1{
-    flex-basis: 35%;
+    flex-basis: 28%;
+    position: relative;
+    top: 5vh;
+    /* bottom: 3vh; */
 }
 .About_col_1 img{
     width: 100%;
     border-radius: 15px;
     margin: 31px;
-    padding-top: 10px;
+    padding-top: 8px;
 }
 .About_col_2{
     flex-basis: 60%;
@@ -409,20 +461,71 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+
+    .Container {
+        display: flex;
+        gap: 86vw;
+    }
+
+    #Header {
+        height: 125vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .About_col_1{
+        flex-basis: 28%;
+        position: relative;
+        top: 5vh;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    
+    #Header {
+        display: flex;
+        height: 100vh;
+    }
+    .About_col_1{
+        flex-basis: 28%;
+        position: relative;
+        top: 8vh;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-
+    #Header {
+        display: flex;
+        height: 100vh;
+    }
+    .About_col_1{
+        flex-basis: 29%;
+        position: relative;
+        top: 7vh;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-
+    #Header {
+        display: flex;
+        height: 100vh;
+    }
+    .About_col_1{
+        flex-basis: 32%;
+        position: relative;
+        top: 13vh;
+    }
 }
 
 @media (min-width: 1201px) {
-
+    /* .Header_Text {
+        margin-top: 5%;
+    } */
+    #Header {
+        display: flex;
+        /* height: 100vh; */
+    }
+    .About_col_1{
+        flex-basis: 28%;
+        position: relative;
+        /* top: 10vh; */
+    }
 }
