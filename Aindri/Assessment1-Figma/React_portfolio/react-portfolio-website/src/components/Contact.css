@@ -1,0 +1,33 @@
+/* Add your contact styles here */
+#Contact {
+    padding: 2em;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+  }
+  
+  form input, form textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+  }
+  
+  form button {
+    padding: 0.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  

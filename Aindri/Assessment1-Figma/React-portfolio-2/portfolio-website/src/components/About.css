@@ -1,0 +1,80 @@
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+#About {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#About .Container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Row{
+    display: flex;/* contents will be side by side */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2VW;
+}
+.About_col_1{
+    flex-basis: 28%;
+    position: relative;
+    top: 5vh;
+    /* bottom: 3vh; */
+}
+.About_col_1 img{
+    width: 100%;
+    border-radius: 15px;
+    margin: 31px;
+    padding-top: 8px;
+}
+.About_col_2{
+    flex-basis: 60%;
+}
+.Sub_title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #797979;
+}
+.Tab_titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.Tab_links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.Tab_links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #b54769;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.Tab_links.Active_link::after{
+    width: 50%;
+}
+.Tab_contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.Tab_contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.Tab_contents{
+    display: none;
+}
+.Tab_contents.Active_tab{
+    display: block;
+}
