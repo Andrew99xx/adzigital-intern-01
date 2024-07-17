@@ -5,7 +5,7 @@ function Services() {
   return (
     <div id="Services">
       <div className="Container">
-        <h1 className="Sub_title">My Services</h1>
+        <h1 className="Sub_title">MY SERVICES</h1>
         <div className="services-list">
           <div>
             <i className="fa-solid fa-code"></i>

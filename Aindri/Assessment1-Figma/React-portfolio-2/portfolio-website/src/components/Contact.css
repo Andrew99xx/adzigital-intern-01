@@ -6,6 +6,7 @@
 }
 .Contact_left p{
     margin-top: 30px;
+    display: flex;
 }
 .Contact_left p i{
     color: #b54769;
@@ -31,7 +32,14 @@
     display: inline-block;
     background: #b54769;
     text-decoration: none;
+    color: #fff;
 }
+
+#Download {
+    background: none;
+    text-decoration: underline;
+}
+
 .Contact_right form{
     width: 100%;
 }

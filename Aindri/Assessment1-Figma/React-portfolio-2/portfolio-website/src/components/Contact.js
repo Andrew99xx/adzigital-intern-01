@@ -18,7 +18,7 @@ function Contact() {
               <a href="https://api.whatsapp.com/send/?phone=%2B919088574729&text=Hello+there%21&type=phone_number&app_absent=0"><i className="fa-brands fa-whatsapp"></i></a>
               <a href="https://www.google.com/maps?q=22.871853,88.424751"><i className="fa-solid fa-location-dot"></i></a>
             </div>
-            <a href="/public" download className="btn btn2">Download My CV</a>
+            <a href="/asset/Resume-may23.pdf" target="_blank" rel="noopener noreferrer" download className="btn btn2" id='Download'>Download My CV</a>
           </div>
           <div className="Contact_right">
             <form name="submit-to-google-sheet">

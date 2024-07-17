@@ -2,18 +2,19 @@ import React from 'react';
 import './About.css';
 
 function About() {
-  const openTab = (tabName) => {
-    const tablinks = document.getElementsByClassName("Tab_links");
-    const tabcontents = document.getElementsByClassName("Tab_contents");
+  const tablinks = document.getElementsByClassName("Tab_links");
+  const tabcontents = document.getElementsByClassName("Tab_contents");
 
-    for (const tablink of tablinks) {
+  // Define the Open_tab function
+  const openTab = (tabname, event) => {
+    for (let tablink of tablinks) {
       tablink.classList.remove("Active_link");
     }
-    for (const tabcontent of tabcontents) {
+    for (let tabcontent of tabcontents) {
       tabcontent.classList.remove("Active_tab");
     }
-
-    document.getElementById(tabName).classList.add("Active_tab");
+    event.currentTarget.classList.add("Active_link");
+    document.getElementById(tabname).classList.add("Active_tab");
   };
 
   return (
@@ -24,27 +25,27 @@ function About() {
             <img src="images/portfolio2.png" alt="About" />
           </div>
           <div className="About_col_2">
-            <h1 className="Sub_title">About Me</h1>
+            <h1 className="Sub_title">ABOUT ME</h1>
             <p>
-              Hey! I'm Aindri Ghoshal, an independent creative web developer and coder from Heritage Institute of Technology,Kolkata. Still learning and upgrading myself.
+              Hey! I'm Aindri Ghoshal, an independent creative web developer and coder from Heritage Institute of Technology, Kolkata. Still learning and upgrading myself.
             </p>
             <div className="Tab_titles">
-              <p className="Tab_links" onClick={() => openTab('Education')}>Education</p>
-              <p className="Tab_links Active_link" onClick={() => openTab('Skills')}>Skills</p>
-              <p className="Tab_links" onClick={() => openTab('Experience')}>Experience</p>
-              <p className="Tab_links" onClick={() => openTab('Projects')}>Project work</p>
+              <p className="Tab_links" onClick={(event) => openTab('Education', event)}>Education</p>
+              <p className="Tab_links Active_link" onClick={(event) => openTab('Skills', event)}>Skills</p>
+              <p className="Tab_links" onClick={(event) => openTab('Experience', event)}>Experience</p>
+              <p className="Tab_links" onClick={(event) => openTab('Projects', event)}>Project work</p>
             </div>
             <div className="Tab_contents" id="Education">
               <ul>
-                <li><span>2018-2021</span><br />Diploma in Electrical Engineering at Technique Polytechnic Institute,Hooghly</li>
-                <li><span>2021-2024</span><br />B Tech in Information Technology from Heritage Institute of Technology,Kolkata.</li>
+                <li><span>2018-2021</span><br />Diploma in Electrical Engineering at Technique Polytechnic Institute, Hooghly</li>
+                <li><span>2021-2024</span><br />B Tech in Information Technology from Heritage Institute of Technology, Kolkata.</li>
               </ul>
             </div>
             <div className="Tab_contents Active_tab" id="Skills">
               <ul>
-                <li><span>Machine Learning</span><br />Algorithms to imitate the way that human learns.</li>
+                <li><span>Machine Learning</span><br />Algorithms to imitate the way that humans learn.</li>
                 <li><span>Web Development</span><br />Web app Development</li>
-                <li><span>Programming</span><br />C++,Java,Python Programming</li>
+                <li><span>Programming</span><br />C++, Java, Python Programming</li>
               </ul>
             </div>
             <div className="Tab_contents" id="Experience">

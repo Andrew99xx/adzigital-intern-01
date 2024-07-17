@@ -18,7 +18,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2VW;
+    gap: 5VW;
 }
 .About_col_1{
     flex-basis: 28%;
@@ -30,16 +30,21 @@
     width: 100%;
     border-radius: 15px;
     margin: 31px;
-    padding-top: 8px;
+    padding-top: 6rem;
 }
 .About_col_2{
     flex-basis: 60%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 .Sub_title{
     font-size: 60px;
     font-weight: 600;
     color: #797979;
+    margin-bottom: 5rem;
 }
+
 .Tab_titles{
     display: flex;
     margin: 20px 0 40px;
@@ -51,6 +56,11 @@
     cursor: pointer;
     position: relative;
 }
+
+.Tab_links:hover {
+    color: #48053e;
+}
+
 .Tab_links::after{
     content: '';
     width: 0;
@@ -67,10 +77,14 @@
 .Tab_contents ul li{
     list-style: none;
     margin: 10px 0;
+    /* text-align: left; */
 }
 .Tab_contents ul li span{
     color: #b54769;
     font-size: 14px;
+    /* text-align: left; 
+    position: relative;
+    right: 3vw;  */
 }
 .Tab_contents{
     display: none;
@@ -78,3 +92,69 @@
 .Tab_contents.Active_tab{
     display: block;
 }
+
+@media only screen and (min-width: 400px) {
+    .About_col_1{
+        flex-basis: 28%;
+        position: relative;
+        top: 5vh;
+    }
+    .About_col_2{
+        margin-left: 5rem;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 650px) {
+    .About_col_1{
+        flex-basis: 28%;
+        position: relative;
+        top: 8vh;
+    }
+    .About_col_2{
+        margin-left: 5rem;
+    }
+  }
+
+  @media (min-width: 650px) and (max-width: 769px) {
+    .About_col_1{
+        flex-basis: 29%;
+        position: relative;
+        top: 7vh;
+    }
+    .About_col_2{
+        margin-left: 5rem;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .About_col_1{
+        flex-basis: 29%;
+        position: relative;
+        top: 7vh;
+    }  
+    .About_col_2{
+        margin-left: 5rem;
+    }
+}
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    .About_col_1{
+        flex-basis: 32%;
+        position: relative;
+        top: 13vh;
+    }
+    .About_col_2{
+        margin-left: 5rem;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    .About_col_1{
+        flex-basis: 28%;
+        position: relative;
+        /* top: 10vh; */
+    }
+    .About_col_2{
+        margin-left: 5rem;
+    }
+  }

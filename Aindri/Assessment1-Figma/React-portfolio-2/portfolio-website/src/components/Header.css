@@ -6,9 +6,15 @@
     background-size: 400PX;
     background-position: right;
     background-repeat: no-repeat;
+    top: 20%;
 }
 
+.Header {
+    display: flex;
+    /* gap: 2vw; */
+    justify-content: space-between;
 
+}
 
 .Container{
     padding: 12px 8% 0 0;
@@ -47,9 +53,11 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .Header_Text{
-    margin-top: 40%;
+    margin-top: 10%;
     font-size: 30px;
     /* text-align: center; */
+    /* width: 50%; */
+    background: 2px solid black;
 }
 .Header_Text h1{
     font-size: 60px;
@@ -59,7 +67,8 @@ nav ul li a:hover::after{
     color: #ff0000;
 }
 .Header_Text p{
-    color: #ffffff;
+    color: #48053e;
+    font-weight: bolder;
 }
 
 .sidebar-toggle {
@@ -117,3 +126,5 @@ nav ul li a:hover::after{
   .sidebar.show {
     transform: translateX(0);
   }
+
+  
