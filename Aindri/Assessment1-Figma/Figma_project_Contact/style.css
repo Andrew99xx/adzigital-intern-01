@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    /* width: 1400px;
+    height: 850px; */
+    background-color: grey;
+    overflow: hidden;
+}
+
+
+/* ---------------Contact-left------------ */
+.contact {
+    background-color: rgba(47, 24, 147, 1);
+    background-image: url('images/Background\ \(2\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact-container {
+    display: flex;
+    height: 100%;
+    /* width: 100vh; */
+    position: relative;
+    top: 7vh;
+    /* left: 7vh; */
+    justify-content: center;
+    /* align-items: center;
+    justify-content: space-between; */
+    align-items: center;
+    /* right: 7vh; */
+    gap: 3vw;
+}
+
+.contact-msg h1 {
+    font-size: 42px;
+    line-height: 52px;
+}
+
+.contact-msg h4 {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    /* width: 50%; */
+}
+
+.contact-msg {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.phn-icon {
+    background-image: url('images/fa-phone.png');
+    height: 2vh;
+    width: 2vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mail-icon {
+    background-image: url('images/fa-envelope.png');
+    height: 2vh;
+    width: 2vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.address-icon {
+    background-image: url('images/fa-building-o.png');
+    height: 2vh;
+    width: 2vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.phone {
+    display: flex;
+    gap: 1vw;
+}
+
+.Email {
+    display: flex;
+    gap: 1vw;
+}
+
+.address {
+    display: flex;
+    gap: 1vw;
+}
+
+/* ---------------Contact-right----------- */
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-color: transparent;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: 68vh;
+    width: 26vw;
+    /* position: relative;
+    left: 1vw; */
+    background-position: contain;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.title1 {
+    display: flex;
+    gap: 9.5vw;
+}
+
+.input1 {
+    display: flex;
+    gap: 2vw;
+}
+
+.div4 {
+    display: flex;
+    gap: 2vw;
+    justify-content: space-around;
+}
+
+#p1 {
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(30, 14, 98, 1);
+    font-weight: bolder;
+}
+
+.tick {
+    height: 20px;
+    width: 20px;
+    background-color: rgba(37, 218, 197, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.tick::before {
+    content: '✔';
+    color: rgba(30, 14, 98, 1);
+    font-size: 16px;
+}
+
+.div4-right button {
+    background-color: rgba(37, 218, 197, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#p2 {
+    color: rgba(21, 20, 57, 0.4);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#p3 {
+    color: rgba(21, 20, 57, 0.4);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    border: 2px solid rgba(235, 234, 237, 1);
+    border-radius: 26px;
+    width: 47%;
+    height: 5vh;
+    margin: 0 0 0 0;
+    padding: 0 0 0 1rem;
+}
+
+#div {
+    position: relative;
+    /* top: 1vh; */
+    left: 5vh;
+    right: 1vh;
+    bottom: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1vh;
+}
+
+.div4-left {
+    display: flex;
+    gap: 1vw;
+}
+
+#div4 {
+    display: flex;
+    gap: 2vw;
+    margin: 0 1rem 0 0;
+    position: relative;
+    left: 0vw;
+    /* right: 2vw; */
+}
+
+.input1 select {
+    font-weight: bolder;
+    color: rgba(30, 14, 98, 1);
+    padding: 0 0 0 1rem;
+}
+
+.input2, .input3 {
+    width: 40vw;
+}
+
+.title3 p{
+    height: 3vh;
+}
+
+#p4 {
+    color: rgba(21, 20, 57, 0.4);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    border: 2px solid rgba(235, 234, 237, 1);
+    border-radius: 14px;
+    width: 47%;
+    height: 15vh;
+    margin: 0 0 0 0;
+    padding: 0 0 4rem 1rem;
+}
+
+.input3 {
+    /* display: flex; */
+}
+
+.input3 input::placeholder {
+    text-align: start;
+}
+
+#select {
+    border: 2px solid rgba(235, 234, 237, 1);
+    border-radius: 26px;
+    width: 24%;
+}

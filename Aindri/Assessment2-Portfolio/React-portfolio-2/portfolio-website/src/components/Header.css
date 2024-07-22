@@ -1,0 +1,130 @@
+#Header{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    background-image: url('../../public/images/Portfolio1.png');
+    background-size: 400PX;
+    background-position: right;
+    background-repeat: no-repeat;
+    top: 20%;
+}
+
+.Header {
+    display: flex;
+    /* gap: 2vw; */
+    justify-content: space-between;
+
+}
+
+.Container{
+    padding: 12px 8% 0 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+/*.logo{
+    width: 140px;
+}*/
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff00ee;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.Header_Text{
+    margin-top: 10%;
+    font-size: 30px;
+    /* text-align: center; */
+    /* width: 50%; */
+    background: 2px solid black;
+}
+.Header_Text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.Header_Text h1 span{
+    color: #ff0000;
+}
+.Header_Text p{
+    color: #48053e;
+    font-weight: bolder;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  /* Style the sidebar menu */
+  .sidebar {
+    bottom: 2vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 136px; */
+    height: 100vh;
+    background-color: #33333391;
+    color: #fff;
+    padding: 40px 0 0 9px;
+    transform: translateX(-250px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    color: #ccc;
+  }
+  
+  .side {
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+  }
+  
+  /* Show the sidebar menu when the icon is clicked */
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  

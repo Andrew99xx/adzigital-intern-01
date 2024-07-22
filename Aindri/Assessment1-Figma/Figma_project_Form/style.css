@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+    overflow: auto;
+}
+
+.Container {
+    background-color: rgba(47, 24, 147, 1);
+    background-image: url('image/Background.png');
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image within the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Added padding for smaller screen readability */
+}
+
+.inner {
+    display: flex;
+    gap: 8vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Adjustable for smaller screen sizes */
+    max-width: 1200px; /* Constrain the width for large screens */
+    width: 100%;
+}
+
+.Nar {
+    width: 100%;
+    max-width: 400px;
+    /* text-align: center; */
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#h3-F {
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: -0.4px;
+    margin-bottom: 35px;
+}
+
+#p-F {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.form {
+    padding: 0;
+    margin: 0;
+    height: auto; /* Removed fixed height for better responsiveness */
+    border-radius: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 11px 0;
+    height: 42px;
+    width: 100%;
+}
+
+.outernav {
+    border-bottom: 1px solid rgba(21, 20, 57, 0.4);
+}
+
+.signup,
+.login {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.signup:hover,
+.login:hover {
+    color: rgba(30, 14, 98, 1);
+    font-weight: bold;
+    border-bottom: 10px;
+}
+
+.signup::after,
+.login::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: rgba(30, 14, 98, 1);
+    border-bottom: 6px;
+    transition: background-color 0.5s, transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: left;
+    bottom: -6px;
+}
+
+.signup:hover::after,
+.login:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+#sl {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 35px;
+    letter-spacing: 2px;
+    color: rgba(21, 20, 57, 0.4);
+    position: relative;
+}
+
+#sl:hover {
+    color: rgba(30, 14, 98, 1);
+    font-weight: bold;
+    border-bottom: 10px;
+}
+
+#sl::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: rgba(30, 14, 98, 1);
+    border-bottom: 6px;
+    transition: background-color 0.5s, transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: left;
+    bottom: -6px;
+}
+
+#sl:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 90%; /* Changed from fixed width to percentage */
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 12px;
+    width: 100%;
+    /* box-sizing: border-box; */
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border-color: rgba(235, 234, 237, 1);
+    font-family: inherit;
+    color: rgba(21, 20, 57, 0.4);
+    font-size: inherit;
+}
+
+#btn {
+    margin: 20px;
+    background-color: rgba(37, 218, 197, 1);
+    border-style: solid;
+    border-color: rgba(235, 234, 237, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 90%;
+    padding: 12px;
+}
+
+.or {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+    margin: 0 0 0 0;
+}
+
+#dash {
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: rgba(20, 20, 20, 0.16);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    width: 128px;
+    height: 1px;
+    padding: 0 0 0 0;
+    margin: 12px 0 0 0;
+}
+
+.or p {
+    color: rgba(21, 20, 57, 0.4);
+    font-style: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    margin: 0 11px 0 11px;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (min-width: 1025px) and (max-width: 1200px)  {
+    .inner {
+        gap: 6vw;
+    }
+
+    #h3-F {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 30px;
+    }
+
+    #p-F {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .inner {
+        gap: 4vw;
+    }
+    .Nar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #h3-F {
+        
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+
+    #p-F {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .Container {
+        padding: 10px;
+    }
+    .Nar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #h3-F {
+        align-items: center;
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 20px;
+    }
+
+    #p-F {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 480px)  {
+    .Container {
+        padding: 5px;
+    }
+    .Nar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner {
+        gap: 2vw;
+    }
+
+    #h3-F {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    #p-F {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

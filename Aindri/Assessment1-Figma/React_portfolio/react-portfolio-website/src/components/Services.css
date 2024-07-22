@@ -1,0 +1,17 @@
+/* Add your services styles here */
+#Services {
+    padding: 2em;
+  }
+  
+  .Service {
+    margin-bottom: 2em;
+  }
+  
+  .Service h3 {
+    font-size: 1.5em;
+  }
+  
+  .Service p {
+    font-size: 1.2em;
+  }
+  

@@ -1,0 +1,123 @@
+* {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.D{
+    background-color: rgba(47, 24, 147, 1);
+    background: url('pricing.jpeg') no-repeat center center fixed;
+    height: 100vh;
+    width: 100vw;
+    
+    position: relative;
+    background-size: cover; 
+    /* display: flex; */
+    flex-direction: column;
+}
+.D::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.2);
+    z-index: 1.5;
+}
+
+
+.pricing-header{
+    justify-content: center;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    top: 6vh;
+    gap: 2vh;
+}
+.pricing-header h4{
+    padding-top: -50%;
+}
+
+.pricing-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.starter{
+    /* font-size: 58px; */
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 70px;
+    /* text-align: center; */
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border: 1px solid rgb(183, 179, 179);
+    border-spacing: 50px;
+    padding-bottom: -2%;
+
+}
+
+.h6{
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.dollar{
+    font-size: 1rem;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.features li {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.features li.tick:before {
+    content: "✓";
+    color: #4CAF50;
+    margin-right: 10px;
+}
+button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 28px;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 1);
+    transition: background-color 0.3s ease; /* Ensure transition is applied */
+    width: 10vw;
+}
+
+button:hover {
+    background-color: rgba(233, 58, 125, 1);
+}
+
+.no-tick {
+    margin-left: 1.5rem;
+}

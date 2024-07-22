@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+    overflow: auto;
+}
+
+.container-main-CTA {
+    background-color: rgba(47, 24, 147, 1);;
+    background-image: url('image/Background.png');
+    background-size: cover; 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;  
+}
+
+.container-CTA {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 1);
+    margin: 0px 0 0 0;
+    /* padding: 0 0 0 0; */
+}
+
+.h4-CTA {
+    font-size: 58PX;
+    line-height: 70px;
+    margin: 0 0 0 0;
+    padding: 0 0 30px 0;
+}
+
+.p-CTA {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0 0 0 0;
+    padding: 0 0 30px 0;
+}
+
+.btn-container-CTA {
+    margin: 28px 0 0 0;
+    /* padding: 9px 21px 0 0; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-btn-CTA {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* background-color: #0056b3; */
+}
+
+.icon-CTA {
+    width: 48px;
+    height: 48px;
+}
+
+.icon-circle-CTA {
+    cx: 24;
+    cy: 24;
+    r: 24;
+    fill: rgba(234, 50, 35, 1);
+}
+
+.icon-path-CTA {
+    d: path("M20 16L32 24L20 32V16Z");
+    fill: #fff;
+}
+
+.circle-btn-CTA svg {
+    display: block;
+    /* background-color: #fff; */
+    /* color: #0056b3; */
+}
+
+.get-started-btn-CTA {
+    background-color:rgba(37, 218, 197, 1);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 7vh;
+    width: 11vw;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 3px 0 0 29px;
+    padding: 0 0 0 0;
+}
+/* Mobile devices: 320–480 pixels */
+@media (max-width: 480px) {
+    .h4-CTA {
+        font-size: 36px;
+        line-height: 44px;
+        padding: 0 0 20px 0;
+    }
+
+    .p-CTA {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 0 0 20px 0;
+    }
+
+    .get-started-btn-CTA {
+        font-size: 16px;
+        line-height: 20px;
+        height: 6vh;
+        width: 40vw;
+        margin: 3px 0 0 0;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon-CTA {
+        width: 22wh;
+        height: 22wd;
+    }
+    .icon-circle-CTA {
+        cy: 24;
+        cx: 24;
+        r: 22;
+        fill: rgba(234, 50, 35, 1);
+    }
+
+    .btn-container-CTA {
+        flex-direction: column;
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-btn-CTA {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .circle-btn-CTA {
+        margin-bottom: 15px;
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .h4-CTA {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 0 0 15px 0;
+    }
+
+    .p-CTA {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 0 15px 0;
+    }
+
+    .get-started-btn-CTA {
+        font-size: 14px;
+        line-height: 18px;
+        height: 5vh;
+        width: 60vw;
+        margin: 3px 0 0 0;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-CTA {
+        width: 40px;
+        height: 40px;
+       
+       
+    }
+    .icon-circle-CTA {
+        cx: 20;
+        cy: 20;
+        r: 20;
+        fill: rgba(234, 50, 35, 1);
+      
+    }
+    .circle-btn-CTA svg {
+        display: inline-block;
+        width: auto;
+        /* background-color: #fff; */
+        /* color: #0056b3; */
+    /*}
+
+    .btn-container-CTA {
+
+        flex-direction: column;
+        margin: 15px 0 0 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-btn-CTA {
+        margin-bottom: 15px;
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+    } */
+}
+
+/* Tablets and iPads: 481–768 pixels */
+@media (min-width: 481px) and (max-width: 768px) {
+    .h4-CTA {
+        font-size: 36px;
+        line-height: 44px;
+        padding: 0 0 20px 0;
+    }
+
+    .p-CTA {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 0 0 20px 0;
+    }
+
+    .get-started-btn-CTA {
+        font-size: 16px;
+        line-height: 20px;
+        height: 6vh;
+        width: 40vw;
+        margin: 3px 0 0 0;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon-CTA {
+        width: 22wh;
+        height: 22wd;
+    }
+    .icon-circle-CTA {
+        cy: 24;
+        cx: 24;
+        r: 22;
+        fill: rgba(234, 50, 35, 1);
+    }
+
+    .btn-container-CTA {
+        flex-direction: column;
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-btn-CTA {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Small screens and laptops: 769–1024 pixels Not Done  */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .h4-CTA {
+        font-size: 48px;
+        line-height: 56px;
+        padding: 0 0 25px 0;
+    }
+
+    .p-CTA {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 0 25px 0;
+    }
+
+    .get-started-btn-CTA {
+        font-size: 18px;
+        line-height: 22px;
+        height: 6.5vh;
+        width: 20vw;
+        margin: 3px 0 0 15px;
+
+        background-color:rgba(37, 218, 197, 1);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+        /* cursor: pointer; */
+        font-size: 8px;
+        height: 7vh;
+        /* width: 18vw; */
+        font-size: 20px;
+        line-height: 26px;
+        /* margin: 3px 0 0 0; */
+        /* padding: 0 0 0 0; */
+    }
+
+    .icon-CTA {
+        width: 22wh;
+        height: 22wd;
+    }
+    .icon-circle-CTA {
+        cx: 24;
+        cy: 24;
+        r: 22;
+        fill: rgba(234, 50, 35, 1);
+    }
+
+    .btn-container-CTA {
+        width: 427px;
+        flex-direction: row;
+        margin: 25px 0 0 0;
+        justify-content: center;
+
+    }
+
+
+    .circle-btn-CTA {
+        margin-bottom: 25px;
+    }
+}
+
+/* Desktops and large screens: 1025–1200 pixels */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .h4-CTA {
+        font-size: 50px;
+        line-height: 70px;
+        padding: 0 0 30px 0;
+    }
+
+    .p-CTA {
+        font-size: 20px;
+        line-height: 32px;
+        padding: 0 0 30px 0;
+    }
+
+    .icon-CTA {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .btn-container-CTA {
+        flex-direction: row;
+        margin: 28px 0 0 0;
+        
+        /* justify-content:space-evenly ; */
+    }
+    
+    .circle-btn-CTA {
+        margin-bottom: 28px;
+    }
+    .get-started-btn-CTA {
+        font-size: 16px;
+        line-height: 26px;
+        height: 7vh;
+        width: 11vw;
+        margin: 3px 0 0 2rem;
+        padding: 10px 20px;
+
+        background-color:rgba(37, 218, 197, 1);
+        /* border: none; */
+        /* color: #fff; */
+        /* border-radius: 60px; */
+        padding: 10px 20px;
+        /* font-size: 16px; */
+        /* cursor: pointer; */
+        width: 15vw;
+        height: 7vh;
+        line-height: 26px;
+        /* font-size: 16px; */
+        /* padding: 0 0 0 0; */
+        margin: 3px 0 0 29px;
+
+    }
+}
+
+/* Extra large screens and TVs: 1201 pixels and more */
+/*  
+@media (min-width: 1201px) {
+    .h4-CTA {
+        font-size: 72px;
+        line-height: 80px;
+        padding: 0 0 35px 0;
+    }
+
+    .p-CTA {
+        font-size: 24px;
+        line-height: 34px;
+        padding: 0 0 35px 0;
+    }
+
+    .get-started-btn-CTA {
+        font-size: 22px;
+        line-height: 28px;
+        height: 7.5vh;
+        width: 25vw;
+        margin: 3px 0 0 0;
+    }
+
+    .icon-CTA {
+        width: 52px;
+        height: 52px;
+    }
+
+    .btn-container-CTA {
+        flex-direction: row;
+        margin: 30px 0 0 0;
+    }
+
+    .circle-btn-CTA {
+        margin-bottom: 30px;
+    }
+}
+    */
