@@ -1,0 +1,23 @@
+
+
+
+.main{
+    border: 10px solid green;
+    display: flex;
+    /* height: 90vh; */
+ 
+
+
+}
+.warpcard{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+/* .cards{
+    justify-content: center;
+    max-width: 1000px;  
+    margin: auto;
+
+} */
