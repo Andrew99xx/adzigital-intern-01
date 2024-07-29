@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Toggle Block</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b9f2843f24.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: Karla;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background-color: #FFFFFF;
+            height: 83px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            color: #000000AB;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-left a {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 19.87px;
+        }
+
+        .nav-left ul {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 2vw;
+        }
+
+        .nav-left {
+            display: flex;
+        }
+
+        #location {
+            background-image: url('ci_location.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 3vh;
+            width: 2vw;
+        }
+
+        .nav-logo h1 {
+            font-family: Cormorant SC;
+            font-size: 27px;
+            font-weight: 400;
+            line-height: 32.7px;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 2vw;
+            align-items: center;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #CECDCDE0;
+            background-color: #fff;
+            height: 3vh;
+        }
+
+        .search-input {
+            border: none;
+            outline: none;
+            font-size: 12px;
+        }
+
+        .search-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .search-button i {
+            font-size: 15px;
+            color: #000000AB;
+        }
+
+        .nav-right-icons {
+            display: flex;
+            gap: 1vw;
+        }
+
+        #heart-icon {
+            background-image: url('wish.png');
+        }
+
+        #bag-icon {
+            background-image: url('EMPTY BAG.png');
+        }
+
+        #person-icon {
+            background-image: url('Vector.png');
+        }
+
+        .icons {
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 2vh;
+            width: 2vw;
+        }
+
+        .middle-container {
+            background-image: url('container-background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .toggle-block {
+            display: none;
+            position: absolute;
+            top: 93px;
+            left: 8px;
+            background-color: white;
+            width: 100vw;
+            height: 45vh;
+        }
+
+        .toggle-block.visible {
+            display: block;
+        }
+
+        .popup-block {
+            display: none;
+            position: fixed; /* Change from absolute to fixed */
+            transform: translate(-50%, -50%); /* Center the block */
+            background-color: white;
+            /* width: 30vw;
+            height: 45vh; */
+            z-index: 1000;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .popup-block.visible {
+            display: block;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: none;
+            background: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        #heart-block {
+            width: 30vw;
+            height: 45vh;
+            top: 50%;
+            left: 50%;
+        }
+        
+        #person-block {
+            width: 30vw;
+            height: 45vh;
+            top: 50%;
+            left: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <ul class="ul">
+                <a href="#" class="icons" id="location"></a>
+                <a href="#" id="jewelry-link">JEWELRY</a>
+                <a href="#">NEW RELEASES</a>
+                <a href="#" id="gifts">GIFTS</a>
+            </ul>
+        </div>
+        <div class="nav-logo">
+            <h1>APOLLONIAN</h1>
+        </div>
+        <div class="nav-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-input">
+                <button class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="nav-right-icons">
+                <a href="#" class="icons" id="heart-icon"></a>
+                <a href="#" class="icons" id="bag-icon"></a>
+                <a href="#" class="icons" id="person-icon"></a>
+            </div>
+        </div>
+    </div>
+    <div class="middle-container">
+        <div id="jewelry-block" class="toggle-block">
+            <p>This is the jewelry block content.</p>
+        </div>
+        <div id="location-block" class="toggle-block">
+            <p>This is location block content</p>
+        </div>
+        <div id="gifts-block" class="toggle-block">
+            <p>This is gifts block content</p>
+        </div>
+        <div id="heart-block" class="popup-block">
+            <button class="close-btn" id="btn-close">&times;</button>
+            <p>This is the heart block content.</p>
+        </div>
+        <div id="person-block" class="popup-block">
+            <button class="close-btn" id="btn-close">&times;</button>
+            <p>This is the person block content.</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleVisibility = (triggerId, blockId, position = 'left') => {
+                const triggerElement = document.getElementById(triggerId);
+                const blockElement = document.getElementById(blockId);
+
+                triggerElement.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    blockElement.classList.toggle('visible');
+                });
+
+                document.addEventListener('click', () => {
+                    if (blockElement.classList.contains('visible')) {
+                        blockElement.classList.remove('visible');
+                    }
+                });
+
+            
+
+                blockElement.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                });
+            };
+
+            
+
+            toggleVisibility('jewelry-link', 'jewelry-block');
+            toggleVisibility('location', 'location-block');
+            toggleVisibility('gifts', 'gifts-block');
+            toggleVisibility('heart-icon', 'heart-block', 'right');
+            toggleVisibility('person-icon', 'person-block', 'right');
+          
+
+            const button = document.querySelector('#heart-block button');
+                if (button) {
+                    button.addEventListener('click', () => {
+                        console.log('sadljfpasjdlf');
+                        const blockElement = document.getElementById('heart-block');
+                        console.log(blockElement);
+                        
+                         
+                            if (blockElement.classList.contains('visible')) {
+                                blockElement.classList.remove('visible');
+                            }
+                          
+                         
+
+                    });
+                }
+                
+            });
+        
+
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const toggleVisibility = (triggerId, blockId, position = 'left') => {
+        //         const triggerElement = document.getElementById(triggerId);
+        //         const blockElement = document.getElementById(blockId);
+        //         const closeButton = blockElement.querySelector('.close-btn');
+
+        //         triggerElement.addEventListener('click', (event) => {
+        //             event.preventDefault();
+        //             event.stopPropagation();
+        //             blockElement.classList.toggle('visible');
+        //         });
+
+        //         closeButton.addEventListener('click', (event) => {
+        //             event.stopPropagation();
+        //             blockElement.classList.remove('visible');
+        //         });
+
+        //         document.addEventListener('click', () => {
+        //             if (blockElement.classList.contains('visible')) {
+        //                 blockElement.classList.remove('visible');
+        //             }
+        //         });
+
+        //         blockElement.addEventListener('click', (event) => {
+        //             event.stopPropagation();
+        //         });
+        //     };
+
+        //     toggleVisibility('jewelry-link', 'jewelry-block');
+        //     toggleVisibility('location', 'location-block');
+        //     toggleVisibility('gifts', 'gifts-block');
+        //     toggleVisibility('heart-icon', 'heart-block');
+        //     toggleVisibility('person-icon', 'person-block');
+        // });
+    </script>
+</body>
+</html>
