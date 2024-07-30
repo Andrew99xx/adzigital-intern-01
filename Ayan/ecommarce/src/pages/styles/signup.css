@@ -77,7 +77,7 @@
     text-align: right;
 
 }
-.upper-section{
+.upper-section-signup{
     border: 1px solid red;
     height: 14vh;
     margin: 2px 100px;
@@ -86,7 +86,7 @@
 
 }
 
-.upper-section h1{
+.upper-section-signup h1{
     text-align: left;
     font-family: Poppins;
     font-size: 24px;
@@ -150,14 +150,14 @@
 
 
 
-.lower-section{
+.lower-section-signup{
     border: 1px solid red;
     height: 38vh;
     margin: 2px 100px;
     display: flex;
     flex-direction: column;
 }
-.input-section{
+.input-section-signup{
     margin: 2.5px;
     padding: 2.5px;
 }

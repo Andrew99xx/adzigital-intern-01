@@ -114,7 +114,7 @@ const Signup = () => {
                             <h6>English (UK)</h6>
                     </div>
 
-                    <div className="upper-section">
+                    <div className="upper-section-signup">
                         <h1>Create Account</h1>
                         <div className="button-signup">
                             <button className='s-btn1' onClick={onGoogleLogIn}> <img src={Google} height='12px'  width='20px' alt=''/>Signup with Google</button>
@@ -130,7 +130,7 @@ const Signup = () => {
                     </div>
 
 
-                    <div className="lower-section">
+                    <div className="lower-section-signup">
                             <form>
                                 <div className="input-section">
                                 
