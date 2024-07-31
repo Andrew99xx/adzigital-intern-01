@@ -1,9 +1,8 @@
 // import { data } from '../data/detils.js'; // Adjust the import path as necessary
 
 import { useEffect, useState } from 'react';
-
-import {db} from '../Firebase/firebaseSdk';
 import { collection, getDocs } from 'firebase/firestore';
+import {db} from '../Firebase/firebaseSdk';
 
 import './styles/shop.css'
 import Card from '../components/Card';  
@@ -12,13 +11,22 @@ import Card from '../components/Card';
 const Shop = () => {
 
   const [products, setProducts] = useState([]);
-  console.log("Ayan ");
+  
 
     useEffect(() => {
       const fetchProducts = async () => {
         const querySnapshot = await getDocs(collection(db, 'productDetails'));
         console.log(querySnapshot);
-        const productsData = querySnapshot.docs.map((doc) => doc.data());
+        
+        // querySnapshot.forEach((doc) => {
+        //   console.log(doc.id); // Log the document ID
+        // });
+
+        // const productsData = querySnapshot.docs.map((doc) => doc.data());
+        const productsData = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data()
+        }));
         console.log("productsData",productsData);
         setProducts(productsData);
     };
@@ -34,16 +42,19 @@ const Shop = () => {
       </div> */}
       <div className="main">
          
-        <div className="warpcard">
-        {products.map((product, index) => (
-            <Card 
-            key={index} 
+        <div className="warp-card">
+        {products.map((product) => (
+          <Card 
+             
+            id={product.id} 
             picture={product.images[0]} 
             name={product.productName} 
             details={product.productCategory} 
             price={product.itemPrice} 
             />
-          ))}
+          ))
+        }
+
         </div>
           
       </div>

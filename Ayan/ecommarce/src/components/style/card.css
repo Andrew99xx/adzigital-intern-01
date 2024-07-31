@@ -2,8 +2,9 @@
     flex-wrap: ;
 } */
 .card-container{
-    border: 1px solid rgb(252, 161, 5);
+    border: 1px solid rgb(252, 5, 5);
     width: 12vw;
+    height: 40vh;
     padding: 1px;
     margin: 5px;
     font-family: "Poppins";
@@ -11,41 +12,189 @@
     flex-wrap: wrap;
     display: flex;
 
+    position: relative;
+    transition: transform 0.5s ease; /* Add this line for a hover effect on the card itself */
+    overflow: hidden;
+
     /* font-weight: 200; */
 
     /* height: ; */
     /* width: 285px;
     height: 446px; */
 }
-.product-image {
-    margin: 0.5px;
-    padding: 0.5px;
+.card-product-image {
+    /* border: 1px solid rgb(5, 252, 30); */
+    height: 60%;
+    width: 100%;
+    /* margin: 0.5px;
+    padding: 0.5px; */
     /* border: 1px solid blue;/ */
     overflow: hidden;
     border-radius: 5px;
 
     
 }
-.product-image img{
-    width: 162px;
-    height: 150px;
+.card-product-image img{
+    /* border: 1px solid rgb(54, 5, 252); */
+
+    width: 100%;
+    height: 100%;
+   
     /* margin: 2px; */
     /* padding: px; */
     /* border: 1px solid blue; */
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+    
+.card-product-description{
+    border: 1px solid red;
+    height: 39%;
+    width: 100%;
+    padding-left: 1px;
+
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    transition: top 0.5s ease;
+
+}
+.card-product-description-name{
+    border: 1px solid red;
+    width: 98%;
+    height: 28px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+     
+
+}
+.card-product-description-details{
+    border: 1px solid red;
+
+    width: 100%;
+    height: 24px;
+
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #898989;
 
 }
 
-.product-description{
-    /* border: 1px solid red; */
-    /* padding: 0.5px; */
-    padding-left: 3px;
+.card-product-description-price{
+    display: flex;  
+    width: 100%;
+    border: 1px solid red;
+    gap: 1px;
+    
+}
+.card-product-description-price p:first-child{
+    width: 55%;
+    height: 30px;
+    border: 1px solid red;
+  
+}
+.card-product-description-price p:last-child{
+    width: 44%;
+    height: 30px;
+    padding: 2px;
+    border: 1px solid red;
+    font-size: 11px;
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    color: #898989;
 
+    text-decoration: line-through;
+  
+}
+
+
+
+
+
+
+.card-container:hover .card-body {
+    top: 0; /* Bring the card body into view on hover */
 }
 p{
     font-family: Poppins;
     font-size: 16px;
     font-weight: 600;
-    /* line-height: 28.8px; */
+     /* line-height: 28.8px; */
     text-align: left;
 
 }
+
+
+ 
+.card-body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;  
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);  
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: top 0.5s ease;  
+    /* padding: 20px; */
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body-share{
+    display: flex;
+    width:  100%;
+    height:  24px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    justify-content: space-evenly;
+
+     
+
+}
+.card-title {
+    /* text-transform: uppercase; */
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.card-sub-title {
+    /* text-transform: capitalize;*/
+      font-size: 11px;  
+}
+
+.card-info {
+    /* margin-top: auto;  */
+    font-size: 11px;
+}
+
+.card-btn {
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: #fff;
+    color: #36768c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-self:center;  
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #36768c;
+    color: #fff;
+}  
