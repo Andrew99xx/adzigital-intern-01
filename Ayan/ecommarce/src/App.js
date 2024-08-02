@@ -13,7 +13,8 @@ import { Route, Routes } from 'react-router-dom';
   import UploadProduct from './pages/UploadProduct';
   import Home from './pages/Home';
   import Footer from './components/Footer';
-// import SingleProduct from './pages/SingleProduct';
+import SingleProduct from './pages/SingleProduct';
+
  
 
  
@@ -25,12 +26,17 @@ function App() {
    
           {/* <Route path="/" element={<NavBar />} /> */}
 
+          <Route path ='/' element={<Home/>} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
+
           <Route path ='/shop' element={<Shop/>} />
           <Route path ='/up' element={<UploadProduct/>} />
+          <Route path ='/product/:id' element={<SingleProduct/>} />
+          {/* <Route path ='/about' element={<A/>} /> */}
 
-          <Route path ='/' element={<Home/>} />
+
+
         
         </Routes>
         <Footer/>

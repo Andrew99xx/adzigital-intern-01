@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 import './style/card.css';
@@ -8,7 +8,12 @@ const Card = ({ id, picture, name, details, price }) => {
   
   const navigate = useNavigate();
   
-  
+ 
+
+  const handleNavigation = () => {
+    // navigate(`/product/${id}`,);
+    window.open(`/product/${id}`,'_blank', )
+  };
   
   console.log("key",id);
   
@@ -16,10 +21,23 @@ const Card = ({ id, picture, name, details, price }) => {
    
 
       <div className="card-container">
-        <div className="card-product-image">
-          <img src={picture} alt={name} />
-        </div>
-         <div className="card-product-description">
+        
+          <div className="card-product-image">
+            <img src={picture} alt={name} />
+            <div className="card-body">
+                  <button className='card-btn' onClick={()=> navigate('/') }>Add to Cart</button>
+                  <div className="card-body-share">
+                    <h1 className='card-title'>Share</h1>
+                    <p className='card-sub-title'>Compare</p>
+                    <p className='card-info'>Like</p>
+                  </div>
+            </div>
+          </div>
+
+
+         <div className="card-product-description" onClick={handleNavigation}>
+           
+
           {/* <div className="card-product-description-name"> */}
             <h6 className='card-product-description-name'>{name}</h6>
           {/* </div> */}
@@ -33,17 +51,19 @@ const Card = ({ id, picture, name, details, price }) => {
               <p>RP {id}</p>
             </div>
           {/* </div> */}
-        </div>
+          </div>
         
-        .<div className="card-body">
-                <button className='card-btn' onClick={()=> navigate('/') }>Add to Cart</button>
-                <div className="card-body-share">
+          {/* <div className="card-body">
+                  <button className='card-btn' onClick={()=> navigate('/') }>Add to Cart</button>
+                  <div className="card-body-share">
+                    <h1 className='card-title'>Share</h1>
+                    <p className='card-sub-title'>Compare</p>
+                    <p className='card-info'>Like</p>
+                  </div>
+          </div> */}
+        
+        
 
-                  <h1 className='card-title'>Share</h1>
-                  <p className='card-sub-title'>Compare</p>
-                  <p className='card-info'>Like</p>
-                </div>
-            </div>
       </div>
     
   );
