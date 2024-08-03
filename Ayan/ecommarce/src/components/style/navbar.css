@@ -10,40 +10,42 @@
     display: flex;
     padding: 10px;
     width: 100%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     justify-content: space-between;
 }
 .upperSection{
     display: flex;
-   border: 1px solid red;
+   /* border: 1px solid red; */
    justify-content: space-between;
-    
-    
+ 
 }
 .logoSection{
-
-    padding-top: 3px;
+    width: 100px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 3px; */
 }
 .logoSection img {
-   border: 1px solid red;
+   /* border: 1px solid red; */
    overflow: hidden;
-   height: 31px;
-   width: 30px;
+   /* height: 31px;
+   width: 30px; */
 }
 .nameSection{
     /* margin-top: 2px; */
-    padding-top: 2px;
+    /* padding-top: 2px; */
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 .middleSection{
     padding-top: 4px;
-
     display: flex;     
     justify-content: space-between;
     width: 400px;
-    border: 1px solid rgb(51, 211, 104);
+    /* border: 1px solid rgb(51, 211, 104); */
 
 
 }
@@ -53,7 +55,7 @@
 .lastSection{
     padding-top: 2px;
     justify-content: space-between;
-    border: 1px solid rgb(51, 211, 104);
+    /* border: 1px solid rgb(51, 211, 104); */
     display: flex;
     justify-content: space-between;
     width: 160px;

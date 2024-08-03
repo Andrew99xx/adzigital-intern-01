@@ -18,10 +18,10 @@ const NavBar = () => {
           <div className="upperSection">
                 <div className="logoSection">
                   <img src={logo} alt="logo"  />
-                </div>
-                <div className="nameSection">
                   <h2>Furniro</h2>
                 </div>
+                {/* <div className="nameSection">
+                </div> */}
            </div>
             <div className="middleSection">
                  <div className='middle'>

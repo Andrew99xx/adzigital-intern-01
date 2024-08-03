@@ -7,7 +7,7 @@
     height: 40vh;
     padding: 1px;
     margin: 5px;
-    border: 1px solid rgb(252, 5, 5);
+    border: 1px solid rgb(125, 105, 105);
     border-radius: 5px;
     font-family: "Poppins";
     transition: transform 0.5s ease; /* Add this line for a hover effect on the card itself */
@@ -52,7 +52,7 @@
 }
     
 .card-product-description{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 39%;
     width: 100%;
     padding-left: 1px;
@@ -65,7 +65,7 @@
 
 }
 .card-product-description-name{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 98%;
     height: 28px;
     font-family: 'Poppins';
@@ -77,7 +77,7 @@
 
 }
 .card-product-description-details{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     width: 100%;
     height: 24px;
@@ -93,21 +93,21 @@
 .card-product-description-price{
     display: flex;  
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     gap: 1px;
     
 }
 .card-product-description-price p:first-child{
     width: 55%;
     height: 30px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   
 }
 .card-product-description-price p:last-child{
     width: 44%;
     height: 30px;
     padding: 2px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 11px;
     display: flex;
     text-align: center;

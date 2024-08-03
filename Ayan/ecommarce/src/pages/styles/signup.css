@@ -1,190 +1,289 @@
-.main-container{
-    border: 1px solid red;
-    /* background-color: var(--BlueDianne-bg); */
+.sign-up-main-container{
     height: 100vh;
     width: 100vw;
-    /* z-index: -100; */
-
-}
-.wrapper-container{
-    border: 1px solid rgb(234, 124, 13);
-    border-radius: 12px;
-    /* background-color: var(--wrapper-bg); */
-    margin: 8rem 15rem;
-    height: 75vh;
     display: flex;
     justify-content: center;
+    font-family: "Poppins";   
 }
-.container-with-logo{
-    /* border: 1px solid red;
-    background-color: white;
-    height: 75vh;*/
-    width: 35vw; 
+
+.sign-up-wrap-container-main {
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A4A60CC;      
+}
+
+
+.sign-up-wrapper-container{
+    /* border: 3px solid rgb(105, 13, 234); */
     border-radius: 12px;
-    /* background-color: red; */
-
-
+    height: 75vh;
+    width: 59vw; 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
 }
- 
- .logo img {
-    width: 135px;
-    height: 117px;
-    top: 25px;
-    left: 15px;
-    gap: 0px;
-    opacity: 0px;
 
- }
-.picturessss img {
-    margin-left: 200px;
-    width: 450.49px;
-    height: 450.97px;
-    top: 393.16px;
-    left: 14.91px;
-    gap: 0px;
-    opacity: 0px;
-    /* z-index: 100; */
-/* angle: 9.25 deg; */
 
+.sign-up-container-with-logo{
+    /* border: 1px solid rgb(81, 254, 1); */
+    height: inherit;
+    width: inherit;
+    background-color: #1F485B;
+    border-radius: 12px;
+    display: flex;
+    z-index: -8;
+    position: absolute;
+    
 }
-.left-side-signup-container{
-    /* align-items: end; */
+
+
+.sign-up-container-with-logo-left{
+    /* border: 1px solid rgb(255, 0, 0); */
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    border-radius: inherit;
+}
+
+.sign-up-container-with-logo-left-start h2{
+    /* border:1px solid red; */
+    padding-left: 25px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: "Poppins";
+    line-height: 35px;
+    letter-spacing: 8%;
+    position: relative;
+    top: 5vh;
+}
+
+.sign-up-container-with-logo-left-logo{
+    padding-left: 15px; 
+}
+.sign-up-container-with-logo-left-logo img {
+    /* border:1px solid red; */
+    width: 4vw;
+    height: 9vh;
+    position: relative;
+    top: 2vh;
+    left: 1vw;
+    object-fit: cover;
+}
+
+
+
+.sign-up-container-right-side{
+    /* border: 2px solid rgb(210, 18, 66); */
     border-radius: 30px 18px 18px 30px;
-
-    border: 2px solid rgb(14, 191, 32);
     background-color: white;
     height: 75vh;
-    /* width: 50vw; */
-    width: 40vw;
-
+    width: 38vw;
     display: flex;
     flex-direction: column;
-    /* z-index: -1; */
+    
 }
-.language-wrapper{
-    border: 1px solid red;
+
+.sign-up-container-right-side-language-wrapper{
+    /* border: 1px solid red; */
     height: 7vh;
     margin: 10px;
     text-align: end;
     padding-right: 10px;
 }
-.language-wrapper h6{
-    font-family: Poppins;
+.sign-up-container-right-side-language-wrapper h6{
+    font-family: "Poppins";
     font-size: 10px;
     font-weight: 400;
     line-height: 35px;
     letter-spacing: 0.08em;
     text-align: right;
-
+    
 }
-.upper-section-signup{
-    border: 1px solid red;
+
+.sign-up-container-right-side-main {
+    /* border: 1px solid red; */
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative;
+    left: 3vw;
+    right: 3vw; */
+}
+
+.sign-up-container-right-side-main-upper-section {
+    /* border: 1px solid red; */
     height: 14vh;
-    margin: 2px 100px;
+    width: 71%;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
 }
 
-.upper-section-signup h1{
-    text-align: left;
-    font-family: Poppins;
+.sign-up-container-right-side-main-upper-section h1{
+    font-family: "Poppins";
     font-size: 24px;
     font-weight: 800;
     line-height: 35px;
     letter-spacing: 0.08em;
- 
+    position: relative;
+    
 }
-.button-signup{
-    display: block;
-    /* border: 1px solid red; */
-    text-align: center;
-    padding: 0 10px;
-    /* justify-content: ; */
-    /* text-align: justify; */
-    /* justify-content: space-evenly; */
 
-}
-.button-signup button{
-    width:  180px;
+.sign-up-container-right-side-main-button-sign-up{
+    width: 100%;
     height: 57px;
     justify-content: space-between;
-    background-color: white;
-    border: 1px solid wheat;
+    
+    /* border: 1px solid rgb(255, 0, 0); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+    
+}
+.sign-up-container-right-side-main-button-sign-up button{ 
+    /* border: 1px solid rgb(123, 0, 239); */
+    width: 45%;
+    height: 65%;
+    background-color: #F3F3F3;
+    gap: 5px;
+    border-radius: 5px;
+    border: 1px solid #F3F3F3;
+    
 }
 .s-btn1{
-    border: 10px solid blueviolet;
+    display: flex;
     float: left;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
 }
 .s-btn2{
     float: right;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 2px;
+    
+    
+    
 }
 .s-btn2 img{
-    height: 20px;
+    height: 15px;
     width: 20px ;
-    border: .5px solid red;
+    /* border: .5px solid red; */
 }
 
 
-.OR-section {
-    border: 1px solid red;
+.sign-up-container-right-side-OR-section {
+    /* border: 1px solid red; */
     margin: 2px ;
     margin-left: 280px;
     margin-right: 280px;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
     /* width: 100%; */
     padding: 10px 0; /* Adjust padding as needed */
+    gap: 1vw;
 }
 
-.or-text-FORM{
+.sign-up-container-right-side-OR-section-or-text-FORM{
     margin: 2px;
+    color: #CDCACA;
+    font-weight: 300;
+    font-size: 18px;
 }
-.line-FORM {
-    flex-grow: 1;
+.sign-up-container-right-side-OR-section-line-FORM {
+    flex-grow: 1; 
     height: 1px;
-    background-color: rgba(20, 20, 20, 0.16);
+    /* /* background-color: rgba(20, 20, 20, 0.16); */
+    border-top: 1px solid #4c2b2b26;
+    width: 1vw;
 }
 
 
 
-.lower-section-signup{
-    border: 1px solid red;
-    height: 38vh;
+.sign-up-container-right-side-lower-section-sign-up{
+    /* border: 1px solid red; */
+    /* height: 38vh; */
     margin: 2px 100px;
     display: flex;
     flex-direction: column;
 }
-.input-section-signup{
+/* .input-section-signup{
     margin: 2.5px;
     padding: 2.5px;
-}
+} */
 .input{
-    
     margin: 5px;
     padding: 5px;
     border: none;
-    width: 100%;
+    width: 98%;
     height: 4vh;
-    /* border-bottom: black; */
+     
 }
+
+.input-section input {
+    font-weight: 500;
+    font-size: 14px;
+    color: #BEBCBC;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+
+
 .create-account-btn{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 2px 00px;
     height: 57px;
     width: 412px;
-
+    overflow: hidden;
+    
 }
 .btn-3{
     height: 57px;
-    width: 412px;
+    width: 411px;
     background-color: #1F485B;
     color: white;
     border-radius: 5px;
-
+    
 }
 .already-account{
-    margin: 10px;
+    margin-top: 5px;
+}
+
+.already-account h6 {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+    color: #BEBCBC;
+    line-height: 35px;
+}
+
+.already-account span {
+    color: #1F485B;
+    text-decoration: none;
+}
+
+.left-side-sign-up-container-big-picture img {
+    /* border:1px solid red; */
+    width: auto;
+    height: 43vh;
+    position: absolute;
+    top: 200px;
+    left: 90px;
+ 
+    
+    object-fit: cover;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import './styles/home.css'
+// import './styles/home.css'
 import HomeImage from '../assets/home page image.jpeg'
 import Card2 from '../components/Card2'
 
@@ -39,26 +39,7 @@ const Home = () => {
              
               </div>
             </div>
-
-            
-                 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
             </div>
         </div>
     </ >

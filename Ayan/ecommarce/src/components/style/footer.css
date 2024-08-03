@@ -1,10 +1,139 @@
 .footer-section{
+    /* border: 1px solid blue; */
+    width: 100vw;
+    height: 505px;
+    border-top: 1px solid #0000002B;
+}
+
+
+.footer-wrapper{
+    /* border: 1px solid rgb(0, 255, 149); */
+    margin: 38px 100px;
+    width: 1240px;
+    height: 400px;
+     
+    /* display: flex; */
+}
+.footer-wrapper-upper{
+    /* border: 1px solid rgba(237, 8, 8, 0.845); */
+    /* margin: 38px 100px; */
+    width: 1240px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    bottom: 15vh;
+}
+.footer-wrapper-upper-s1{
+    /* border: 1px solid blue; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+.footer-wrapper-upper-s1 h3{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+h5 {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#diff-color {
+    color: #9F9F9F;
+}
+ 
+.footer-wrapper-upper-s1 p{
+    /* margin-top: 45px; */
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9F9F9F;
+}
+.footer-wrapper-upper-s2{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    width: 20%;
+    gap: 8vh;
+    position: relative;
+    top: 13vh;
+}
+.footer-wrapper-upper-s3{
+    /* border: 1px solid blue; */
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    width: 20%;
+    gap: 8vh;
+    position: relative;
+    top: 13vh;
+
+}
+.footer-wrapper-upper-s4{
+    /* border: 1px solid blue; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 12.2vh;
+    padding-left: 2rem;
+}
+
+.footer-wrapper-upper-s4 div {
+    position: relative;
+    bottom: 5vh;
+    display: flex;
+    gap: 1vw;
+}
+
+.footer-wrapper-upper-s4 input {
+    border: none;
+    border-bottom: 1px solid black;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9F9F9F;
+}
+
+.footer-wrapper-upper-s4 button {
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.footer-wrapper-lower{
+    /* border: 3px solid rgba(251, 33, 0, 0.785); */
+    border-top: 1px solid #0000002B;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.footer-wrapper-last{
+    /* border: 1px solid blue; */
+
+}
+Link{
+    text-decoration: none;
+}
+/* .footer-section{
     border: 1px solid blue;
     width: 100vw;
     height: 505px;
       
 }
-
 
 .footer-wrapper{
     border: 1px solid rgb(0, 255, 149);
@@ -12,11 +141,11 @@
     width: 1240px;
     height: 400px;
      
-    /* display: flex; */
+     
 }
 .upper{
     border: 1px solid rgba(237, 8, 8, 0.845);
-    /* margin: 38px 100px; */
+    
     width: 1240px;
     height: 400px;
    
@@ -69,4 +198,4 @@
 .last{
     border: 1px solid blue;
 
-}
+} */
