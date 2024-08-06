@@ -4,12 +4,13 @@ import React from 'react'
 // import './styles/home.css'
 import HomeImage from '../assets/home page image.jpeg'
 import Card2 from '../components/Card2'
+import Breadcrumb from '../components/Breadcrumb'
 
 
 
 const Home = () => {
   return (
-    <> 
+    <>    
         <div className="container">
             <div className="wrapper-section">
 

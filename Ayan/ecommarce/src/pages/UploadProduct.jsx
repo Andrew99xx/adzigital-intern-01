@@ -21,6 +21,8 @@ const initialValues = {
     itemSizeBreadth:"",
     itemSizeHeight:"",
     itemPrice:"",
+    itemColor:[],
+
 
     
 };

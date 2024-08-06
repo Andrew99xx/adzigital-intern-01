@@ -1,0 +1,18 @@
+/* .color-section-wrapper{
+
+} */
+
+.color-section-p{
+    display: flex;
+    gap: 5px;
+}
+
+.color-section-colors{
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+}

@@ -1,23 +1,32 @@
 import React, { useState ,useEffect} from 'react'
-import "./styles/singleproduct.css"
-import s1 from '../assets/s1.png'
-import bi from '../assets/bi.png'
-import star from '../assets/star.png'
-import mask from '../assets/Mask group.png'
 import { useLocation } from 'react-router-dom'
 import { collection, doc, getDoc, getDocs } from 'firebase/firestore'
 import { db } from '../Firebase/firebaseSdk'
 
+import ColorSection from '../components/ColorSection'
+import ProductControls from '../components/ProductControls'
+import SizeSelector from '../components/SizeSelector'
+
+import linkedinicon from '../assets/svg-icons/linkedin.svg'
+import tweetericon from '../assets/svg-icons/tweeter.svg'
+
+import facebookicon from '../assets/svg-icons/akar-icons_facebook-fill.svg'
+import s1 from '../assets/s1.png'
+import bi from '../assets/bi.png'
+import star from '../assets/star.png'
+import mask from '../assets/Mask group.png'
+import "./styles/singleProduct.css"
+
 const SingleProduct = () => {
-    
+    const [product, setProduct] = useState(null);    
     let location = useLocation();
     console.log(location.pathname);
     const id = location.pathname.split('/').pop();
     console.log(id); 
 
-
-   const [product, setProduct] = useState(null);    
-
+    /* */
+    
+    /* */
   useEffect(() => {
     const fetchProductById = async () => {
       try {
@@ -43,103 +52,101 @@ const SingleProduct = () => {
     fetchProductById();
   }, [id]);
 
-  
-
-
-
-
-
-
-    console.log("producys",product);
+    console.log("Product",product);
 
     if (!product || !product.images) {
-        return <div>Loading...</div>; // or return null, or a placeholder content
+        return <div>Loading...</div>;
     }
 
   return (
     <div>
+         
         <div className="single-product-section">
             <div className="single-product-wrapper">
 
 
-                <div className="upper-section">
-                    <div className="upper-section-wrapper">
-                        <div className="small-img">
+                <div className="single-product-upper-section">
+                    <div className="single-product-upper-section-wrapper">
+                        <div className="single-product-upper-section-small-img">
                                 <img src={product.images[1]} alt="" srcset="" />
                                 <img src={product.images[2]} alt="" srcset="" />
                                 <img src={product.images[3]} alt="" srcset="" />
                                 <img src={product.images[3]} alt="" srcset="" />
                         </div> 
-                        <div className="big-img">
+                        <div className="single-product-upper-section-big-img">
                             <img src={product.images[0]} alt="" srcset="" />
                         </div>
-                        <div className="details-img">
+                        <div className="single-product-upper-section-details">
                             <h5>{product.productName}</h5>
-                            <h6>Rs &nbsp; {product.itemPrice}</h6>
-                            <div className="review">
-                                <div className="star">  
-                                    <img src={star} alt="" srcset="" />
-                                    <img src={star} alt="" srcset="" />
-                                    <img src={star} alt="" srcset="" />
-                                    <img src={star} alt="" srcset="" />
-                                    <img src={star} alt="" srcset="" />
-                                </div>
-                                <div className="NOC">
-                                <p>5 Customer Review</p>
-                                </div>
-                            </div>
-                            <div className="pd">                             
-                                <p>Setting the bar asadsd Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem culpa, maiores dolore, reprehenderit hic facere rem dolorum consequuntur iusto voluptas optio officiis aut magnam illo?
-                                    s one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.</p>
-                            </div>
-                            <div className="size">
-                                <h6>Size</h6>
-                                <div className="size-box">
-                                    <div className="sizes">
-                                        <p>XL</p>
-                                    </div>
-                                    <div className="sizes">
-                                        <p>XL</p>
-                                    </div>
-                                    <div className="sizes">
-                                        <p>XL</p>
-                                    </div>
-                                    <div className="sizes">
-                                        <p>XL</p>
-                                    </div>
 
+                            <h6>Rs.&nbsp;{product.itemPrice}</h6>
+
+                            <div className="single-product-upper-section-review">
+                                <div className="single-product-upper-section-review-star">  
+                                    <img src={star} alt="" srcset="" />
+                                    <img src={star} alt="" srcset="" />
+                                    <img src={star} alt="" srcset="" />
+                                    <img src={star} alt="" srcset="" />
+                                    <img src={star} alt="" srcset="" />
+                                </div>
+                                <div className="single-product-upper-section-review-NOC">
+                                    <p>5 Customer Review</p>
                                 </div>
                             </div>
-                            <div className="product-color">
+                            <div className="single-product-upper-section-product-description">                             
+                                <p>Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, veritatis? highs for a sound.</p>
+                            </div>
+
+                            <div className="single-product-upper-section-product-size">
+                                {/* <div className="single-product-upper-section-review-size-box"> */}
+                                <SizeSelector id={id} product={product}/>
+                                    {/* <div className="single-product-upper-section-review-sizes">
+                                        <p>XL</p>
+                                    </div>
+                                    <div className="single-product-upper-section-review-sizes">
+                                        <p>XL</p>
+                                    </div>
+                                    <div className="single-product-upper-section-review-sizes">
+                                        <p>XL</p>
+                                    </div>
+                                    <div className="single-product-upper-section-review-sizes">
+                                        <p>XL</p>
+                                    </div> */}
+                                {/* </div> */}
+                            </div>
+                            
+                            <div className="single-product-upper-section-product-colors">
                                 <h6>Color</h6>
-                                <div className="colors">
-                                    <div className="color">
-                                        <p>b</p>
-                                    </div>
-                                    <div className="color">
-                                        <p>g</p>
-                                    </div>
-                                    <div className="color">
-                                        <p>r</p>
+                                <ColorSection id={id} product={product}/>         
+                            </div>
+
+                            <div className="single-product-upper-section-add-to-cart-btn-section">
+                                     
+                                <ProductControls id={id} product={product}/>
+                            </div>
+                            <hr />
+                            <div className="single-product-upper-section-product-tags">
+                                <div className="p-tag">
+                                    <div className="p-tag-l">SKU</div> 
+                                    <div className="p-tag-r">: {product.inventorySKU}</div>     
+                                </div>
+                                <div className="p-tag">
+                                    <div className="p-tag-l">Category</div> 
+                                    <div className="p-tag-r">:{product.productCategory }</div>
+                                </div>
+                                <div className="p-tag">
+                                    <div className="p-tag-l">Tags</div> 
+                                    <div className="p-tag-r">: Sofa,Chair,Home,Shop</div>
+                                </div>
+                                <div className="p-tag">
+                                    <div className="p-tag-l">Share</div> 
+                                    <div className="p-tag-r">: 
+                                        <img src={facebookicon} alt="" srcset="" />
+                                        <img src={linkedinicon} alt="" srcset="" />
+                                        <img src={tweetericon} alt="" srcset="" />
                                     </div>
                                 </div>
-                            </div>
-                            <div className="add-to-cart-btn-section">
-                                    <div className="increase-btn">
-                                        <button>IN CS</button>
-                                    </div>
-                                    <div className="add-cart-btn">
-                                        <button >Add TO Cart</button>
-                                    </div>
-                            </div>
 
-
-
-                            <div className="product-tags">
-                                <div className="ptag">SKU : {product.inventorySKU }</div>
-                                <div className="ptag">Category: {product.productCategory }</div>
-                                <div className="ptag">Tags: Sofa,Chair,Home,Shop</div>
-                                <div className="ptag">Share :</div>
                             </div>
                         </div>
                     </div>
@@ -148,7 +155,7 @@ const SingleProduct = () => {
 
 
 
-
+                    {/* NOT DONE */}
                 <div className="single-product-middle-section">
                         <div className="single-product-middle-wrapper-section">
                             <div className="single-product-middle-section-heading">
@@ -315,10 +322,10 @@ return (
 
 
                             <div className="product-tags">
-                                <div className="ptag">SKU : SSOI</div>
-                                <div className="ptag">Category:Sofa</div>
-                                <div className="ptag">Tags: Sofa,Chair,Home,Shop</div>
-                                <div className="ptag">Share :</div>
+                                <div className="p-tag">SKU : SSOI</div>
+                                <div className="p-tag">Category:Sofa</div>
+                                <div className="p-tag">Tags: Sofa,Chair,Home,Shop</div>
+                                <div className="p-tag">Share :</div>
                             </div>
                         </div>
                     </div>

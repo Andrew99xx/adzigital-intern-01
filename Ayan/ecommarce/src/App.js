@@ -10,7 +10,8 @@ import UploadProduct from './pages/UploadProduct';
 import Footer from './components/Footer';
 import Home2 from './pages/Home2';
 import SingleProduct from './pages/SingleProduct';
-
+import ParentComponent from './components/ParentComponent';
+ 
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
   return (
     <>
       {!hideNavAndFooter && <NavBar />}
-      
+
       <Routes>
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
@@ -30,6 +31,7 @@ function App() {
         <Route path="/up" element={<UploadProduct />} />
         <Route path="/" element={<Home2 />} />
         <Route path="/" element={<Home2 />} />
+        <Route path="/p/:id" element={<ParentComponent />} />{/*//test*/}
         <Route path ='/product/:id' element={<SingleProduct/>} />
 
       </Routes>
@@ -42,13 +44,10 @@ function App() {
 export default App;
 
 // import { Route, Routes } from 'react-router-dom';
-
 //   import './App.css';
 //   import Signup from './pages/Signup';
 //   import Signin from './pages/Signin';
 //   // import Home1 from './pages/Home1';
-  
-  
 //   import Shop from './pages/Shop';
 //   import NavBar from './components/NavBar';
 //   // import Card from './components/Card';
@@ -56,37 +55,22 @@ export default App;
 //   import Home from './pages/Home';
 //   import Footer from './components/Footer';
 // import SingleProduct from './pages/SingleProduct';
-
- 
-
- 
 // function App() {
 //   return (
 //     < > 
 //     <NavBar/>
-//         <Routes>
-   
+//         <Routes>  
 //           {/* <Route path="/" element={<NavBar />} /> */}
-
 //           <Route path ='/' element={<Home/>} />
 //           <Route path="/signup" element={<Signup />} />
 //           <Route path="/signin" element={<Signin />} />
-
 //           <Route path ='/shop' element={<Shop/>} />
 //           <Route path ='/up' element={<UploadProduct/>} />
 //           <Route path ='/product/:id' element={<SingleProduct/>} />
-//           {/* <Route path ='/about' element={<A/>} /> */}
-
-
-
-        
+//           {/* <Route path ='/about' element={<A/>} />     
 //         </Routes>
 //         <Footer/>
-      
-
-
 //    </>  
 //   );
 // }
-
 // export default App;

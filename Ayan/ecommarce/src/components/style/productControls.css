@@ -1,0 +1,38 @@
+.product-control-section{
+    display: flex;
+
+     gap: 10px;
+    align-items: center;
+     width: 100%   
+}
+.product-control-section-INC-DEC-section{
+    display: flex;
+    align-items: center;
+
+border: 1px solid #000;
+   padding: 10px;
+   border-radius: 8px;
+}
+
+.product-control-section-INC-btn{
+    background: transparent;
+    font-size: 16px;
+    border:none
+}
+.product-control-section-DEC-btn{
+    background: transparent;
+    font-size: 16px;
+    border:none
+}
+
+
+.product-control-section-ATC-btn{
+     padding: 10px 20px;
+     border-radius: 10px;
+     /* border:  1px solid #000; */
+}
+.product-control-section-CMP-btn{
+     padding: 10px 20px;
+     border-radius: 10px;
+     /* border:  1px solid #000; */
+}

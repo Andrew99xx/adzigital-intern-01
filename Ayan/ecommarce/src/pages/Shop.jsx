@@ -6,6 +6,8 @@ import {db} from '../Firebase/firebaseSdk';
 
 import './styles/shop.css'
 import Card from '../components/Card';  
+import Breadcrumb from '../components/Breadcrumb';  
+
 
 
 const Shop = () => {
@@ -40,6 +42,7 @@ const Shop = () => {
       {/* <div className="nav">
         <NavBar/>
       </div> */}
+      <Breadcrumb/>
       <div className="main">
          
         <div className="warp-card">
