@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-
+import './style/breadcrumb.css'
 const Breadcrumb = () => {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter(x => x);
@@ -14,7 +14,7 @@ const Breadcrumb = () => {
   });
 
   return (
-    <div>
+    <div className='breadcrumb-section'>
       {breadcrumbs}
     </div>
   );

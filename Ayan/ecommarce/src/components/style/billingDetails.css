@@ -1,0 +1,109 @@
+.billing-details-head{
+    border: 1px solid red;
+    height: 50px;
+    width: 245px;
+    height: 54px;
+    top: 514px;
+    left: 174px;
+    gap: 0px;
+    opacity: 0px;
+
+
+}
+/*  */
+.name-fields {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .form-groups {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+  }
+  .form-group {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Ensure some space between the fields */
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+    color: #000000; /* Black text for labels */
+    font-weight: 600; /* Bold text for the labels */
+    font-size: 1rem; /* Medium font size */
+  }
+  
+  .input-group input {
+    padding: 10px;
+    border: 1px solid #e5e5e5; /* Light grey border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffffff; /* White background for inputs */
+    color: #000000; /* Black text */
+    font-size: 1rem;
+  }
+  .select{
+    padding: 10px;
+    border: 1px solid #e5e5e5; /* Light grey border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffffff; /* White background for inputs */
+    color: #000000; /* Black text */
+    font-size: 1rem;
+  }
+  
+  .input-group input:focus {
+    border-color: #ffcc00; /* Change border color on focus */
+    outline: none;
+  }
+  .form-group-textarea{
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #e5e5e5; /* Light grey border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffffff; /* White background for inputs */
+    color: #000000; /* Black text */
+    font-size: 1rem;
+  }
+/**/  
+.billing-details-head h2{
+    /* border: 1px solid red; */
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 54px;
+    text-align: left;
+}
+.billing-details-form-group-name-section{
+    display: flex;
+}
+
+
+.billing-details form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group > div > input,
+  .form-group > input,
+  .form-group > select,
+  .form-group > textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }

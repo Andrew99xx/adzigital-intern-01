@@ -1,0 +1,33 @@
+.features-container {
+    display: flex;
+    justify-content: space-between; /* Evenly spaces the feature items */
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f5ee; /* Light background color */
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20%; /* Each feature takes up 20% of the container width */
+}
+
+.feature-icon {
+    width: 50px; /* Adjust icon size */
+    height: auto;
+    margin-bottom: 10px; /* Space between icon and title */
+}
+
+.feature-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.feature-description {
+    font-size: 14px;
+    color: #666;
+}

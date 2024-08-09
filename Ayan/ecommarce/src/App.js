@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import Home2 from './pages/Home2';
 import SingleProduct from './pages/SingleProduct';
 import ParentComponent from './components/ParentComponent';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
  
 
 
@@ -29,14 +31,16 @@ function App() {
         <Route path="/signin" element={<Signin />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/up" element={<UploadProduct />} />
-        <Route path="/" element={<Home2 />} />
-        <Route path="/" element={<Home2 />} />
+        {/* <Route path="/" element={<Home2 />} /> */}
+        <Route path="/" element={<Checkout />} />
+        <Route path="/cart" element={<Cart />} />
+
         <Route path="/p/:id" element={<ParentComponent />} />{/*//test*/}
         <Route path ='/product/:id' element={<SingleProduct/>} />
 
       </Routes>
       
-      {!hideNavAndFooter && <Footer />}
+      {/* {!hideNavAndFooter && <Footer />} */}
     </>
   );
 }
