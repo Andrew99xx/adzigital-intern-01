@@ -13,6 +13,8 @@ import SingleProduct from './pages/SingleProduct';
 import ParentComponent from './components/ParentComponent';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import ContactForm from './pages/Contact';
+import ProductComparison from './pages/ProductComparison';
  
 
 
@@ -29,11 +31,16 @@ function App() {
       <Routes>
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
+        {/* <Route path="/" element={<Home2 />} /> */}
+        <Route path="/contact" element={<ContactForm />} />
+        <Route path="/checkout" element={<Checkout />} />
+
+
+
+        
         <Route path="/shop" element={<Shop />} />
         <Route path="/up" element={<UploadProduct />} />
-        {/* <Route path="/" element={<Home2 />} /> */}
-        <Route path="/" element={<Checkout />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/" element={<ProductComparison />} />
 
         <Route path="/p/:id" element={<ParentComponent />} />{/*//test*/}
         <Route path ='/product/:id' element={<SingleProduct/>} />
