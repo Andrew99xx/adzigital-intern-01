@@ -2,7 +2,6 @@
     height: 7vh;
     width: 100%;
     background-color: #FFFFFF;
-    ;
     display: flex;
 }
 .wrapperNav{
@@ -21,7 +20,7 @@
 }
 .logoSection{
     width: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;

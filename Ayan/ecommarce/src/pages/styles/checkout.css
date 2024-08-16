@@ -1,16 +1,15 @@
  
   .checkout-section{
-    border: 1px solid red;
+    /* border: 1px solid rgb(72, 223, 17); */
     display: flex;
     justify-content: space-between;
     padding-left: 50px;
     padding-top: 20px;
-    /* padding-left:  */
     background-color: #FFFFFF; /* Light grey background */
   }
   
   .billing-details {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     width: 55%;
     margin-right: 20px;
@@ -20,7 +19,7 @@
   }
   
   .order-summary {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     width: 45%;
     background-color: #ffffff; /* White background for the order summary */

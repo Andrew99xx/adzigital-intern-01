@@ -1,19 +1,21 @@
 import React from 'react'
 import './styles/checkout.css'
 import Features from '../components/Features'
-import CartHeader from '../components/CartHeader'
-import BillingDetails from '../components/BillingDetails'
+ import BillingDetails from '../components/BillingDetails'
 import OrderSummary from '../components/OrderSummary'
+import Breadcrumb from '../components/Breadcrumb'
+
+
 const Checkout = () => {
   return (
     <div>
-      <CartHeader/>
-      <div className="checkout-section">
-      <BillingDetails />
-      <OrderSummary/>
-      </div>
-      <Features/>
-       
+      <Breadcrumb pageName={"Checkout"}/>
+
+        <div className="checkout-section">
+          <BillingDetails />
+          <OrderSummary/>
+        </div>
+       <Features/>
     </div>
   )
 }
