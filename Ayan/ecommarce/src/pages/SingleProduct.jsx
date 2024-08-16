@@ -2,6 +2,8 @@ import React, { useState ,useEffect} from 'react'
 import { useLocation } from 'react-router-dom'
 import { collection, doc, getDoc, getDocs } from 'firebase/firestore'
 import { db } from '../Firebase/firebaseSdk'
+// import s1 from '../assets/s1.png'
+// import bi from '../assets/bi.png'
 
 import ColorSection from '../components/ColorSection'
 import ProductControls from '../components/ProductControls'
@@ -11,8 +13,6 @@ import linkedinicon from '../assets/svg-icons/linkedin.svg'
 import tweetericon from '../assets/svg-icons/tweeter.svg'
 
 import facebookicon from '../assets/svg-icons/akar-icons_facebook-fill.svg'
-import s1 from '../assets/s1.png'
-import bi from '../assets/bi.png'
 import star from '../assets/star.png'
 import mask from '../assets/Mask group.png'
 import "./styles/singleProduct.css"
