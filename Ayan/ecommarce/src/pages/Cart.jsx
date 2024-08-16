@@ -1,8 +1,9 @@
 import React from 'react'
 import './styles/cart.css'
-import cartb from '../assets/cart-b.png'
+// import cartb from '../assets/cart-b.png'
 import CartHeader from '../components/CartHeader'
 import Features from '../components/Features'
+import Breadcrumb from '../components/Breadcrumb'
 const Cart = () => {
   return (
     <div className='cart-section'>
@@ -25,7 +26,7 @@ const Cart = () => {
 
 
             </div> */}
-            <CartHeader/>
+           <Breadcrumb pageName={"Cart"}/>
         <div className="cart-section-wrapper">
             <div className="cart-section-wrapper-left">
                 <div className="cart-section-wrapper-left-heading">
